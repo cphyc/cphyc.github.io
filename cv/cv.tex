@@ -1,0 +1,580 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+\usepackage{multicol}
+
+\usepackage{geometry} % Allows the configuration of document margins
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\geometry{a4paper, textwidth=6.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Nestor Espinoza - vita},pdfauthor={Nestor Espinoza}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+\usepackage{tabularx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE N\'estor Espinoza}\\[0.2cm] % Your name
+\begin{minipage}[t]{0.63\textwidth}
+Instituto de Astrof\'isica\\
+Pontificia Universidad Cat\'olica de Chile\\
+Vicu\~na Mackenna 4860, Santiago, Chile\\
+\end{minipage}
+\begin{minipage}[t]{0.37\textwidth}
+E-mail: \href{mailto:nespino@astro.puc.cl}{nespino@astro.puc.cl}\\
+Phone: +562 354 7052\\ 
+\url{http://www.nestor-espinoza.com}
+\end{minipage}
+
+\hrulefill
+\section*{Education}
+
+%\begin{minipage}[t]{0.5\textwidth}
+%Birth\\
+%Languages
+%\end{minipage}
+
+%second column
+% first column
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+ Ph. D. in Astrophysics\\
+ (expected graduation: June, 2017)
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2012 --- present 
+\end{minipage}\\
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+ Licenciate in Astronomy (\textit{summa cum laude})\\
+ Advisor: Dr. Andr\'es Jord\'an
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2007 --- 2012 
+\end{minipage}
+
+\section*{Fellowships \& Awards}
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{PUC Young Student Leader}\\
+Yearly recognition given to 20 students from the university
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Kavli Summer Program in Astrophysics Fellowship}\\
+Granted to 17 PhD students around the world
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{People's Choice Award}\\
+ Awarded at the Three Minute Thesis\textsuperscript{\textregistered} Competition at PUC
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Distinguished Graduate Student Award}\\
+ Yearly award granted by the Chilean Astronomical Society
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{CONICYT Graduate Research Fellowship}\\
+Granted by the Chilean Ministry of Education
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2013---present
+\end{minipage}
+
+\section*{Publications}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{First author}:
+\begin{enumerate}
+\setlength\itemsep{0.05cm}
+\item ``\textit{Discovery and Validation of a High-Density sub-Neptune from the K2 Mission}"\\
+          \textbf{Espinoza, N.}, Brahm, R., Jord\'an, A., et al., 2016, ApJ, 830, 43.
+
+\item ``\textit{HATS-25b through HATS-30b: A Half-dozen New Inflated Transiting Hot Jupiters from the HATSouth Survey}"\\
+          \textbf{Espinoza, N.}, Bayliss, D., Hartman, J., et al., 2016, AJ, 152, 108.
+
+\item ``\textit{Limb-darkening and exoplanets II: Choosing the Best Law for Optimal Retrieval of Transit Parameters}"\\
+          \textbf{Espinoza, N.} \& Jord\'an, A., 2016, MNRAS, 457, 3573.
+          
+\item ``\textit{Limb-darkening and exoplanets: testing stellar model atmospheres and identifying biases in transit parameters}"\\
+         \textbf{Espinoza, N.} \& Jord\'an, A., 2015, MNRAS, 450, 1879. 
+\end{enumerate}
+\textbf{Co-authored} (28 refereed publications in total, selected publications follow):
+\begin{enumerate}
+\setlength\itemsep{0.05cm}
+\item ``\textit{ACCESS I: An Optical Transmission Spectrum of GJ 1214b Suggesting a Heterogeneous Stellar Photosphere}"\\
+          Rackham, B., \textbf{Espinoza, N.}, Apai, D., et al., 2016, ApJ, accepted.
+\item ``\textit{CERES: A Set of Automated Reduction Routines for Echelle Spectra}"\\
+          Brahm, R., Jord\'an, A., \textbf{Espinoza, N.}, 2016, Submitted to PASP.
+\item ``\textit{HATS-11b AND HATS-12b: Two Transiting Hot Jupiters Orbiting Subsolar Metallicity Stars Selected for the K2 Campaign 7}"\\
+          Rabus, M., Jord\'an, A., Hartman, J., et al. (including \textbf{Espinoza, N.}), 2016, AJ, 152, 88.
+\item ``\textit{HATS-18 b: An Extreme Short--Period Massive Transiting Planet Spinning Up Its Star}"\\
+          Penev, K., Hartman, J., Bakos, G., et al. (including \textbf{Espinoza, N.}), 2016, Submitted to ApJ.
+\item ``\textit{HATS-17b: A Transiting Compact Warm Jupiter in a 16.3 Day Circular Orbit}"\\
+          Brahm, R., Jord\'an, A., Bakos, G., et al. (including \textbf{Espinoza, N.}), 2016, AJ, 151, 89.
+\item ``\textit{An independent discovery of two hot Jupiters from the K2 mission}"\\
+          Brahm, R., Jones, M., \textbf{Espinoza, N.}, et al., 2016, Accepted for Publication in PASP.
+\item ``\textit{HATS-7b: A Hot Super Neptune Transiting a Quiet K Dwarf Star}"\\
+          Bakos, G., Penev, K., Bayliss, D., et al. (including \textbf{Espinoza, N.}), 2015, ApJ, 813, 111.
+\item ``\textit{Water vapour absorption in the clear atmosphere of a Neptune-sized exoplanet}"\\
+          Fraine, J., Deming, D., Benneke, B., et al. (including \textbf{Espinoza, N.}), 2014, Nature, 513, 526.
+\item ``\textit{A Ground-based Optical Transmission Spectrum of WASP-6b}"\\
+          Jord\'an, A., \textbf{Espinoza, N.}, Rabus, M., et al., 2013, ApJ, 778, 184.
+\end{enumerate}
+\end{flushleft}
+\section*{Observing proposals \& experience}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Accepted observing proposals (as PI)}:
+\begin{enumerate}
+\item ``Exploring the broadband atmospheric features of the extreme exoplanet KELT-11b"\\
+         4 nights | Swope 1m | 2016A
+\item ``ACCESS -- The Arizona-CfA-Catolica Exoplanet Spectroscopy Survey"\\
+         8 nights | Baade 6.5m | 2014-2016
+\item ``Variability monitoring of ACCESS targets: towards a precise and accurate view of exoplanetary atmospheres"\\
+         50 hours | LCOGTN 1m | 2015B
+\end{enumerate}
+\textbf{Observing experience}:
+\end{flushleft}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Magellan/IMACS, 23 nights 
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014-2016
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Magellan/MMIRS, 1 night
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014A
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ DuPont 2.5m, 1 night
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2013B
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ SMARTS 0.9m, 8 nights
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014B
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Swope 1m, 10 nights
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014-2016
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Euler 1.2m/CORALIE, 20 nights
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2013-2016
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ MPG-ESO 2.2m/FEROS, 2 nights
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2012A
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ ESO 3.2m/HARPS, 10 nights
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014-2016
+\end{minipage}
+%----------------------------------------------------------------------------------------
+\section*{Invited Talks}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Disks and Planets Seminar, Universidad Diego Portales, Chile
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 08/2016
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Kavli Summer Program Seminar, UCSC, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 07/2016
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Planet and Star Formation Coffee Talk, MPIA, Germany
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 07/2015
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Instituto de Astrof\'isica de Canarias Seminar, Spain
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 07/2015
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Joint OSU-PUC Workshop Talk, Ohio State University, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2014
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+ORIGINS Seminar, Center for Astrobiology, University of Arizona, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2014
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+XI Chilean Astronomical Society Annual Science Meeting, Chile 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2014
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+First International Meeting in Astrostatistics in Valparaiso, Chile 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2013
+\end{minipage}
+
+\section*{Outreach}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Weekly astronomy show on chilean national radio station ``Futuro FM"\\
+Audience: +30k/week (source: Iberoamericana Radio Chile) 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2015---present
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Monthly astronomy blog at the ``Telescopios Chile" web portal
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2015---present
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public lecture: ``Planetary transits: 400 years discovering new worlds"\\
+2016 Transit of Mercury day, PUC, Chile
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2016
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public lecture: ``Light: an electric and magnetic relationship"\\
+EXPLORA-CONICYT National Science Week, Chile
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2015
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Lecture for school teachers: ``Hands-on spectroscopy with the SDSS"\\
+Given yearly at the National Astronomy Olympiads, Chile  
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2012---2015
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited jury at the VI National Astronomy Olympiads, Chile  
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 07/2014
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Several ($\sim 2$ per semester) talks at chilean schools 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2012---present
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.8\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Founder and Coordinator of the ``Bling Bling Universe" astronomy initiative
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.2\textwidth}
+\hfill 2009---2015
+\end{minipage}
+
+\vspace{0.3 cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Director of the ``Itinerant Physics" outreach program
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2009---2013
+\end{minipage}
+
+\section*{Teaching and Mentoring}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Teacher, Center of Study and Development of Talent, Penta UC}\\
+Course: ``Orders of Magnitude" (50 hours per course)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014A, 2014B, 2016A
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Invited Lecturer, Faculty of Economics and Business, U. de Chile}\\
+Course: ``Introduction to Science" (one lecture per semester)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016A, 2016B
+\end{minipage}
+
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Teaching Assistant}:
+\end{flushleft}
+\begin{minipage}[t]{0.6\textwidth}
+\ \ \ \ \ ASP5408: Statistics for Astronomers (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2012---2016
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ AST0421: Experimental Astrophysics (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014B
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ AST0212: Introduction to Data Analysis (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014A
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ AST1525: Putting Numbers to the Earth and the Universe (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014A
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ AST0311: General Astrophysics (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2013A
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ FIS101M: General Physics for the Military School (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2011B
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ FIS120: Electricity \& Magnetism (Univ. T\'ecnica Federico Santa Mar\'ia)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2010---2011
+\end{minipage}
+
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Student mentorship}:
+\end{flushleft}
+\begin{minipage}[t]{0.6\textwidth}
+\ \ \ \ \ Roy Van der Westhuizen (Undergraduate Thesis), PUC
+
+\ \ \ \ \ \ Title: ``An interactive virtual exoplanet laboratory: APIastro"
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2015B
+\end{minipage}
+
+
+\end{document}
