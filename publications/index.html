@@ -59,12 +59,16 @@ Here is a list of selected publications that best represent my current research 
     <h4><b>HATS-25b through HATS-30b: A Half-dozen New Inflated Transiting Hot Jupiters from the HATSouth Survey</b></h4>
     <b>Espinoza</b> et al., 2016, AJ, 152, 108.<br>
     <font size="2" align="justify"><i>What is the article about?</i> <br>
-    The HATSouth survey is a project which aims at detecting planets from Neptune to Jupiter sized in the southern hemisphere. 
-    In this work, we report the discovery of six "inflated" hot-Jupiters, all of which are very interesting for follow-up observations. 
-    In order to confirm the nature of these planets, we use photometric and spectroscopic measurements, along with high resolution imaging 
-    using AstraLux, which allowed us to obtain high resolution imaging via the technique of lucky imaging from the ground. In order to analyze 
-    that data, code is released that allows to analyze any high resolution image and generate contrast curves, useful for constraining the 
-    brightness of possible companions in those images. 
+    The HATSouth survey is a project which aims at detecting planets from sub-Neptune to Jupiter sized in the southern hemisphere, using 
+    three arrays of automated small telescopes around the world: one array is located at Las Campanas Observatory (Chile), another one 
+    is located at the High Energy Stereoscopic System (HESS) Observatory in Namibia (Africa), and the other is located in the Siding 
+    Spring Observatory (SSO, Australia). Using these arrays, in this paper we report the discovery of six "inflated" hot-Jupiters, all 
+    of which are very interesting for follow-up observations, including possible atmospheric studies. In order to confirm the nature of these 
+    planets, we use photometric and spectroscopic measurements, but here we make use for the first time in the HATSouth survey of high resolution 
+    imaging using AstraLux, a lucky imaging camera mounted on the 3.6m New Tecnology Telescope (NTT) at La Silla Observatory, which allowed us to 
+    obtain nearly diffraction limited high resolution imaging from the ground. In order to analyze that data, code was released along this paper 
+    that generates contrast curves for any image at hand, which is useful for constraining the brightness of possible companions around the planet 
+    hosting star which might mimic or distort the transit signal.. 
     </font>
     <h5>[<a href="http://adsabs.harvard.edu/abs/2016arXiv160600023E" target="_blank">Read the full article</a> | <a href="https://github.com/nespinoza/luckyimg-reduction" target="_blank">Code</a>]</h5>
   </div>
@@ -73,10 +77,10 @@ Here is a list of selected publications that best represent my current research 
     <h4><b>Discovery and Validation of a High-Density sub-Neptune from the K2 Mission</b></h4>
     <b>Espinoza</b> et al., 2016, ApJ, 830, 43.<br>
     <font size="2" align="justify"><i>What is the article about?</i> <br>
-    In this article, we report the discovery of a planet which is only 2 times the size of Earth, but 16 times more massive! Although the 
-    error on our mass measurement are large (6 earth-masses), this is a very interesting planet because of many reasons. First, the planet 
+    In this article, we report the discovery of a planet which is only 2 times the size of Earth, but 16 times more massive. Although the 
+    errors on our mass measurement are large (6 earth-masses), this is a very interesting planet because of many reasons. First, the planet 
     falls just where two-layer models of planetary structure predict planets made of pure rock to fall. Of course, these models are too simple 
-    to explain most of planets, and is likely that this planet is not made of pure rock but, instead, has either large fractions of water and/or 
+    to explain most planets, and is likely that this planet is not made of pure rock but, instead, has either large fractions of water and/or 
     a thick hydrogen envelope. Second, taking its radius and mass at face value, planets as small and massive as this one are rare. However, 
     further data is needed in order to better constrain the mass of the planet, which is currently very uncertain. The discovery was made using 
     data from the K2 mission, and observations made with the HARPS spectrograph mounted on the ESO La Silla 3.6m telescope. 
@@ -87,18 +91,48 @@ Here is a list of selected publications that best represent my current research 
   <div class="job">
     <h4><b>Limb darkening and exoplanets - II. Choosing the best law for optimal retrieval of transit parameters</b></h4>
     <b>Espinoza</b> & Jordán, 2016, MNRAS, 457, 3573. 
+<br>
+    <font size="2" align="justify"><i>What is the article about?</i> <br>
+    Limb-darkening, the apparent darkening of a star thowards the limb, is a very significant effect on the modelling of transit lightcurves, 
+    which we use to extract several parameters of the system including the planet-to-star ratio, which in turn gives us the planetary radius 
+    if we know the radius of the star. Past works (see below) have shown that it is better to model this effect directly from the transit lightcurve 
+    rather than trusting in stellar models to model the effect, because the levels of precision we are currently achieving are high enough that 
+    small differences between our stellar models and the actual stellar atmospheres make significant impact on the retrieved planetary parameters. 
+    However, different parametrizations exist to model limb-darkening and, to date, it has been not explored which law is the optimal to use in 
+    different settings. In this work, we explore which laws are the best ones to use, which we note strongly depends on the stellar parameters of the 
+    host star, the noise level of the lightcurve and the number of in-transit points. We release code to decide for a given lightcurve which is the 
+    optimal law to use. 
+    </font>
     <h5>[<a href="http://adsabs.harvard.edu/abs/2016MNRAS.457.3573E" target="_blank">Article</a> | <a href="https://github.com/nespinoza/ld-exosim" target="_blank">Code</a>]</h5>
   </div>
   <br>
   <div class="job">
     <h4><b>Limb darkening and exoplanets: testing stellar model atmospheres and identifying biases in transit parameters</b></h4>
-    <b>Espinoza</b> & Jordán, 2015, MNRAS, 450, 1879. 
+    <b>Espinoza</b> & Jordán, 2015, MNRAS, 450, 1879. <br>
+    Limb-darkening, the apparent darkening of a star thowards the limb, is an evident effect observed in transit lightcurves, which are distorted 
+    because of it. A failure in modelling this effect, thus, might introduce biases, which have not been studied in detail. Here, we 
+    ask whether (1) we understand this effect well enough, and (2) whether it matters that we do at the precision level we are currently working 
+    with. Here we revised how limb-darkening is actually calculated from stellar atmosphere models, and find several inconsistencies both 
+    theoretical (i.e., how models are interpreted) and technical (i.e., how models are actually handled). On top of this, even correcting them 
+    stellar models are not up for the challenge. We conclude this by comparing limb-darkening coefficients extracted directly from Kepler 
+    high-precision lightcurves to the expectations from model atmospheres, where we observed there are significant biases between them. This 
+    answered the first question: no, we don't understand limb-darkening well enough. The second question is answered via simulations, and it is 
+    proven that it does matter given our current high precision photometric measurements.
+    </font>
+
     <h5>[<a href="http://adsabs.harvard.edu/abs/2015MNRAS.450.1879E" target="_blank">Article</a> | <a href="https://github.com/nespinoza/limb-darkening" target="_blank">Code</a>]</h5>
   </div>
   <br>
   <div class="job">
     <h4><b>A Ground-based Optical Transmission Spectrum of WASP-6b</b></h4>
-    Jordán, <b>Espinoza</b> et al., 2013, ApJ, 778, 184. 
+    Jordán, <b>Espinoza</b> et al., 2013, ApJ, 778, 184. <br>
+    <font size="2" align="justify"><i>What is the article about?</i> <br>
+       In this work, we used Magellan/IMACS for the first time in order to study the atmosphere of the
+       exoplanet WASP-6b, via the technique of transmission spectroscopy, validating this instrument as capable of 
+       performing these high-precision spectrophotometric measurements at optical wavelengths. We found that the longer the wavelength is, 
+       the smaller the observed radius of the planet was, which is a signature that hazes in the atmosphere of the exoplanet 
+       can give rise to.
+    </font>
     <h5>[<a href="http://adsabs.harvard.edu/abs/2013ApJ...778..184J" target="_blank">Link</a>]</h5>
   </div>
 </section>
