@@ -1,0 +1,307 @@
+\documentclass{beamer}
+
+\usepackage{graphicx,subfigure,url}
+\usepackage{pgfpages,multimedia}
+\usepackage{pdfpc-commands}
+
+% example themes
+\usetheme{metropolis}
+\metroset{numbering=fraction,progressbar=frametitle}
+% \usecolortheme{seahorse}
+
+
+% \setbeameroption{show notes}
+% \setbeameroption{show notes on second screen=right}
+
+\title{Monte-Carlo Tracer Particles}
+\subtitle{RUM 2017, Nice}
+\author{Corentin Cadiou}
+\institute{IAP, CNRS}
+\date{September 20, 2017}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}[plain]{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Eulerian \& Lagrangian}
+  Eulerian code (AMR like):
+  \begin{itemize}
+  \item no subgrid information
+  \item no Lagrangian history of gas
+  \end{itemize}
+
+  {\em Is it possible to overcome this issue?}
+\end{frame}
+\begin{frame}{From passive scalar to tracers}
+
+  \begin{itemize}
+  \item<1-> Where does the gas go?
+  \item<2-> Where does the gas come from?
+  \item<3-> How much gas is recycled in stars? in AGNs?
+  \item<4-> ... [TBC]
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{What's a tracer}
+  What are the properties we want for tracers?
+  \pause
+  \begin{block}{Physical properties}
+    \begin{itemize}
+    \item Passive
+    \item {\em Behave} like the gas on average
+    \item Like individual $H/He$ nuclei
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Computational properties}
+    \begin{itemize}
+    \item Cheap (CPU? RAM?)
+    \item Go where the gas goes (star, sinks, grid, dust, ...)
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+\section{Different methods}
+\subsection{Velocity method}
+\begin{frame}{Velocity method}
+
+  Move tracers using tri-linear interpolation of the velocity
+  \begin{equation}
+    v^p_i = \text{interpolation}\sum_{\text{neighbor}\ j} v_j
+  \end{equation}
+
+  \begin{block}{Pros}
+    \begin{itemize}
+    \item
+      smooth Lagrangian history (trace velocity)
+    \item
+      already implemented in RAMSES!
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{Cons}
+    \begin{itemize}
+    \item
+      \emph{does not} follow the gas density: $\int\text{d}S v^p_i\rho
+      \neq \text{flux}$
+    \item
+      how to trace stars? AGN?
+    \item
+      quite CPU expensive
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+\subsection{Monte Carlo method}
+\begin{frame}{Monte Carlo method}
+
+  \begin{columns}
+    \column{0.6\textwidth}
+    Move tracers following flux
+    \begin{equation*}
+      p_{i\rightarrow j} = \frac{\text{mass flux}_{i\rightarrow j}}{M_i}
+    \end{equation*}
+
+    \column{.35\textwidth}
+    \vspace{.3em}
+    \includegraphics[width=\columnwidth]{figures/tracer_particles_one_by_one}
+  \end{columns}
+% \end{frame}
+% \begin{frame}{Monte Carlo method}
+  \pause
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{block}{Pros}
+      \begin{itemize}
+      \item CPU cheap
+      \item follow gas density
+      \item precision $\propto N_\text{tracers}$
+      \item move onto stars, sinks, \ldots{}
+      \item \pause \textbf{now implemented!}
+      \end{itemize}
+    \end{block}
+
+    \pause
+    \column{0.5\textwidth}
+    \begin{block}{Cons}
+      \begin{itemize}
+      \item RAM expensive
+      \item noisy Lagrangian history
+      \end{itemize}
+    \end{block}
+  \end{columns}
+\end{frame}
+
+
+\section{MC Implementation}
+
+\begin{frame}{Scheme}
+  \includegraphics[width=\columnwidth]{figures/tracer_particles}
+\end{frame}
+
+\begin{frame}{Equations}
+  First and last equations:
+  Let
+  \[ M_{i,\text{out}} = \sum_{j\wedge i} M_{i\rightarrow j} \quad \text{ if $M_{i\rightarrow j} > 0$},\]
+  then \textbf{for all tracer particles} in cell \(i\):
+  \begin{align}
+    p_{i, \text{out}} = \frac{M_{i,\text{out}}}{M_i}, &
+    \quad\text{\# Proba. of going out of $i$} \\
+    p_{i\rightarrow j} = \frac{M_{i\rightarrow j}}{M_{i,\text{out}}}, &
+    \quad\text{\# Proba. of going from $i$ to $j$}
+  \end{align}
+  following \emph{S.Genel et al, 13}
+\end{frame}
+
+\begin{frame}{Algorithm}
+  Algorithm for cell $i$ mass $M_i$, neighbors $j$:
+  \begin{enumerate}
+  \item<1-> Compute outgoing mass $M_{i,\text{out}}$ and $M_{i\rightarrow j}$.
+  \item<2-> Compute outgoing proba $p_{i,\text{out}}=M_{i,\text{out}}/M_i$
+    and $p_{i\rightarrow j} = M_{i\rightarrow j}/M_{i,\text{out}}$.
+  \item<3-> For each particle:
+    \begin{enumerate}
+    \item Draw random number $r_j$.
+    \item Select particles $r_j < p_{i,\text{out}}$.
+    \end{enumerate}
+  \item<4-> For each selected particle:
+    \begin{enumerate}
+    \item Draw random number $r_j'$.
+    \item If $r_j' < p_{i\rightarrow j}$, move to cell $j$.
+    \end{enumerate}
+  \end{enumerate}
+  \uncover<5>{\alert{Small flux limit: $N_\text{moved}\sim\text{Poisson distribution}(p)$}}
+\end{frame}
+\section{Is it working?}
+% \subsubsection{Spoiler alert: yes}
+\begin{frame}{Cosmo}
+  \begin{columns}
+    \column{.4\textwidth}
+    \href{run:figures/MC_cosmo.avi?autostart&loop=false}{%
+      \includegraphics[width=\columnwidth]{figures/MC_cosmo.png}}
+    \column{.4\textwidth}
+    \href{run:figures/density_cosmo.avi?autostart&loop=false}{%
+      \includegraphics[width=\columnwidth]{figures/density_cosmo.png}}
+    \column{.4\textwidth}
+    \href{run:figures/vel_cosmo.avi?autostart&loop=false}{%
+      \includegraphics[width=\columnwidth]{figures/vel_cosmo.png}}
+  \end{columns}
+\end{frame}
+
+\fullFrameImage{figures/comparison/comparison_3.png}{\copyrightText{Cosmological
+    Simulation, DM+hydro, left to right: MC tracer, gas and velocity tracers}}
+\fullFrameImage{figures/info_00028_Projection_x_density_cropped.pdf}{\copyrightText{Cosmological
+    Simulation, DM+hydro, left to right: MC tracer, gas and velocity tracers}}
+
+% \begin{frame}
+%   \frametitle{Power spectrum}
+%   TODO: plot of the gas power spectrum (for a 256x256x256 grid)
+% \end{frame}
+
+\fullFrameMovie[loop=false]{figures/KH_movie.avi}{figures/info_00375_tracer_vs_gas_density}
+% \begin{frame}{Kelvin-Helmoltz instability}
+%   \href{run:figures/KH_movie.avi?autostart&loop=false}{\}
+%   Here I want 3 movies in //
+%   \href{figures/output.avi}{Movie}
+% \end{frame}
+
+\fullFrameMovie[loop=false]{figures/blob_movie.avi}{figures/info_00020_tracer_vs_gas_density.png}
+% \begin{frame}{Blob test}
+%   Blob test in slow-mow
+% \end{frame}
+
+\begin{frame}{Star formation}
+  \begin{itemize}
+  \item SF recipy: mechanical feedback
+  \item homogeneous density
+  \end{itemize}
+  \centering
+  \includegraphics[width=.8\columnwidth]{figures/star_formation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Small galaxy}
+  \begin{center} %
+    \only<1>{Gas only
+
+      \includegraphics[width=.8\textwidth]{figures/plots_galaxy/info_00030_Projection_x_density_ones.png}%
+    }\only<2>{Gas and stars
+
+      \includegraphics[width=.8\textwidth]{figures/plots_galaxy/info_00030_Projection_x_density_ones_star.png}%
+    }\only<3>{Gas and star tracers
+
+      \includegraphics[width=.8\textwidth]{figures/plots_galaxy/info_00030_Projection_x_density_ones_star_and_tracers.png}%
+    }\only<4>{MC tracers
+
+      \includegraphics[width=.8\textwidth]{figures/plots_galaxy/info_00030_Projection_x_MC_tracer_cic_ones.png}%
+    }
+  \end{center}
+\end{frame}
+
+\section{Discussion}
+\begin{frame}
+  \frametitle{Room for improvement}
+  \begin{block}{TODO \& wishlist:}
+    \begin{itemize}
+    \item Get AGN feedback done (WIP).
+    \item Other SN feedback.
+    \item Quantify diffusion (esp. high flux limit)
+    \item Explore other MC algorithms.
+    \item \pause{} Get users!
+    \end{itemize}
+  \end{block}
+  \uncover<2>{
+    \begin{center}
+      ``SAV'' at \alert{corentin.cadiou@iap.fr}
+    \end{center}
+  }
+\end{frame}
+
+% \section*{Advertisement}
+% \begin{frame}{YT!}
+%   yt now supports:
+%   \begin{itemize}
+%   \item sinks
+%   \item RT
+%   \item custom particle + fluid fields
+%   \end{itemize}
+
+%   \begin{center}
+%     \alert{http://yt-project.com}
+%   \end{center}
+
+% \end{frame}
+
+
+\begin{frame}[standout]
+  Thank you!\\
+  Questions?
+\end{frame}
+
+
+\section*{Advertisement}
+\begin{frame}{YT!}
+  yt now supports:
+  \begin{itemize}
+  \item sinks
+  \item RT
+  \item custom particle + fluid fields
+  \item \alert{BSD} license (permissive)
+  \end{itemize}
+
+  \begin{center}
+    \alert{http://yt-project.com}
+  \end{center}
+
+\end{frame}
+
+\end{document}
