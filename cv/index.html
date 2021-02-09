@@ -17,8 +17,15 @@ description: My CV
   </p>
 </section>
 
-<iframe src="{{site.url}}/cv/cv_en.pdf" width="150%" height="500px" style="margin-left: -25%;"></iframe>
-
+<section id="cv_section">
+  <button type="button" id="cv_switch" onClick="toggleCVLang('#cv_switch')">Show CV in French</button>
+  <div id="cv_en">
+    <iframe src="{{site.url}}/cv/cv_en.pdf" width="150%" height="500px" style="margin-left: -25%;"></iframe>
+  </div>
+  <div id="cv_fr">
+    <iframe src="{{site.url}}/cv/fr/main.pdf" width="150%" height="500px" style="margin-left: -25%;"></iframe>
+  </div>
+</section>
 <!-- <section id="education">
   <h1>Education</h1>
   <div class="job">
