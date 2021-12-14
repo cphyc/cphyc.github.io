@@ -1,0 +1,28 @@
+name: Update publications
+
+on:
+  schedule:
+    - cron: "MON"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+
+    - name: "Install dependencies"
+      run: pip install ads jinja2
+
+    - name: "Update publication list"
+      run: python utils/get_publications.py
+
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
