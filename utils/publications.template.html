@@ -1,0 +1,29 @@
+---
+layout: publications
+title: Corentin Cadiou's Publications
+current: publications
+description: My Publications
+---
+
+<p>
+  To date, I have submitted <b>{{ stats.first_author }}</b> papers as author or co-lead author.
+  I also contributed to <b>{{ stats.contributor }}</b> other articles.
+  My papers have been cited <b>{{stats.citations}}</b> times (h-index of {{stats.h_index}} as of {{last_check}}).
+  You can check out my full record on <a href="https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22{{author_str}}%22))&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS</a>.
+</p>
+<ol>
+  {% for paper in stats.papers %}
+  <li>
+    <a href="{{ paper.url }}">{{ paper.title }}</a>,
+    {% for author in paper.authors %}
+    {% if author.last == highlight_author -%}<b>{% endif %}
+      {{ author.first -}}
+      {%- if author.first != "" %}&nbsp;{% endif -%}
+      {{- author.last -}}
+    {%- if author.last == highlight_author %}</b>{% endif -%}
+    {%- if not loop.last %}, {% else %}.{% endif %}
+    {% endfor %}
+    {{ paper.journal }}, {{ paper.year }}.
+  </li>
+  {% endfor %}
+</ol>
