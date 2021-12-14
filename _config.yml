@@ -3,3 +3,5 @@ description: Personal website.
 url: https://cphyc.github.io
 markdown: kramdown
 language: en
+exclude:
+  - "utils/"
