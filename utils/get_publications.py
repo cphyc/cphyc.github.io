@@ -5,11 +5,13 @@ from textwrap import dedent, indent
 from typing import List, Optional, Sequence
 import urllib
 import re
+from pathlib import Path
 
 import ads
 from jinja2 import Environment
 from jinja2.utils import select_autoescape
 
+root = Path(__file__).parent.parent
 
 _SKIP = -999
 REPLACEMENTS = {
@@ -217,7 +219,7 @@ def format_results(stats: StatsResult, author: str) -> str:
 
 def main(argv: Optional[Sequence]) -> int:
     parser = argparse.ArgumentParser(description="Get the list of papers from ADS")
-    parser.add_argument("-o", "--output", type=str, default="utils/publications.html")
+    parser.add_argument("-o", "--output", type=str, default=root / "publications" / "index.html")
     parser.add_argument("-a", "--author", type=str, default="Cadiou, C")
 
     args = parser.parse_args(argv)
@@ -227,8 +229,11 @@ def main(argv: Optional[Sequence]) -> int:
     res = process_papers(papers, main_author)
     content = format_results(res, args.author)
 
-    with open(args.output, "w") as f:
-        f.write(content)
+    out = Path(args.output)
+    if not out.parent.exists():
+        out.parent.mkdir()
+
+    out.write_text(content)
 
     return 0
 
