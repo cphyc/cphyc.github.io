@@ -34,7 +34,7 @@ def replace(key: str) -> str:
             .replace("#", "\#")
         )
 
-    return val
+    return str(val)
 
 
 def get_arxiv(paper: ads.search.Article) -> str:
