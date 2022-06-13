@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="340.16" height="173.88" version="1.1" viewBox="0 0 340.16 173.88" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath20-3">
+   <path d="m303.31 655.67h255.12v130.41h-255.12z"/>
+  </clipPath>
+  <clipPath id="clipPath24-7">
+   <path d="m0 0h444.56v227.25h-444.56z"/>
+  </clipPath>
+  <clipPath id="clipPath28-3">
+   <path d="m20.645 64.969h79v80h-79z"/>
+  </clipPath>
+  <clipPath id="clipPath32-6">
+   <path d="m0 0h445v228h-445z"/>
+  </clipPath>
+  <clipPath id="clipPath36-9">
+   <path d="m21 65h79v80h-79z"/>
+  </clipPath>
+  <clipPath id="clipPath40-2">
+   <path d="m99.512 104.87c0 21.637-17.539 39.176-39.18 39.176-21.637 0-39.176-17.539-39.176-39.176s17.539-39.176 39.176-39.176c21.641 0 39.18 17.539 39.18 39.176z"/>
+  </clipPath>
+  <clipPath id="clipPath44-0">
+   <path d="m0 0h445v228h-445z"/>
+  </clipPath>
+  <clipPath id="clipPath48-3">
+   <path d="m20.645 111.97h99v65h-99z"/>
+  </clipPath>
+  <clipPath id="clipPath52-0">
+   <path d="m0 0h445v228h-445z"/>
+  </clipPath>
+ </defs>
+ <g transform="matrix(1.3333 0 0 -1.3333 -66.04 1011.1)">
+  <g transform="translate(-253.78 -27.741)">
+   <g clip-path="url(#clipPath20-3)">
+    <g transform="matrix(.57387 0 0 .57387 303.31 655.67)">
+     <g clip-path="url(#clipPath24-7)">
+      <g transform="matrix(1,0,0,-1,0,227.25)">
+       <path d="m199.3 1.125v225" fill="none" stroke="#000" stroke-width="1.5"/>
+       <path d="m274.3 1.125v225" fill="none" stroke="#000" stroke-width="1.5"/>
+       <path d="m124.3 76.125h225" fill="none" stroke="#000" stroke-width="1.5"/>
+       <path d="m124.3 151.12h225" fill="none" stroke="#000" stroke-width="1.5"/>
+       <path d="m124.3 1.125h225v225h-225z" fill="none" stroke="#000" stroke-width="2.25"/>
+       <path d="m429.25 113.46h-51.762l13.391 9.016-5.926 27.257 21.957-17.203 24.09 14.063-9.57-26.199z" fill="#b3b3b3" stroke="#000" stroke-width=".75"/>
+       <path d="m387.23 136.91h13.864l5.808-4.387 7.383 4.387h13.258" fill="none" stroke="#000" stroke-width=".75"/>
+       <path d="m385.83 144.62h5.824" fill="none" stroke="#000" stroke-width=".75"/>
+       <path d="m389.46 121.38h31.746" fill="none" stroke="#000" stroke-width=".75"/>
+       <path d="m389.46 129.18h35.34" fill="none" stroke="#000" stroke-width=".75"/>
+       <path d="m442.24 101.82-20.812 18.567 9.57 26.199-24.09-14.063-21.957 17.203 5.926-27.257-23.145-15.567 27.754-2.785 7.657-26.824 11.226 25.535z" fill="none" stroke="#fc0" stroke-width="1.7008"/>
+       <path d="m220.05 99.477h32.363v31.215h-32.363z" fill="#b3b3b3" stroke="#000" stroke-width=".85039"/>
+       <path d="m220.07 85.426v45.265h32.344v-45.265" fill="none" stroke="#000" stroke-width="1.7008"/>
+       <g font-family="'DejaVu Sans'" font-size="12px">
+        <text transform="translate(301.53 134.88)" fill="#d4aa00" xml:space="preserve"><tspan x="0 6.2399993 10.943999 18.323999 21.647999 24.971998 32.315998 37.247997" y="0">stellar </tspan><tspan x="-8.9179668 -4.6939678 2.6860318 10.066031 17.67403 25.28203 32.62603 39.214027" y="13.199999">feedback</tspan></text>
+        <text transform="translate(77.06 183.12)" fill="#ff6060" xml:space="preserve"><tspan x="0 7.9919991 17.279999" y="0">AGN</tspan><tspan x="-14.437499 -10.213499 -2.8334997 4.5464997 12.154499 19.762499 27.106497 33.694496" y="13.199999">feedback</tspan></text>
+        <text transform="translate(283.22 101.82)" fill="#d4aa00" xml:space="preserve"><tspan x="0 6.2399993 10.943999 18.287998 23.219997 27.023998 31.247997 38.579998 43.283997 54.971996 62.315994 67.019997 70.343994 77.639992" y="0">star formation</tspan></text>
+        <text transform="translate(118.35 74.634)" fill="#ff0000" xml:space="preserve"><tspan x="0 7.6079993 17.951998 26.183998 35.195995 38.999996 46.343998 52.931995 59.555996 64.235992 71.615997 76.319992 79.64399 86.97599" y="0">SMBH accretion</tspan></text>
+       </g>
+       <path d="m220.05 99.477h31.746v7.805h-31.746z" fill="none" stroke="#000" stroke-opacity=".96863" stroke-width=".52742"/>
+       <path d="m220.05 107.28h31.746v7.805h-31.746z" fill="none" stroke="#000" stroke-opacity=".96863" stroke-width=".52742"/>
+       <path d="m220.05 115.09h31.746v7.805h-31.746z" fill="none" stroke="#000" stroke-opacity=".96863" stroke-width=".52742"/>
+       <path d="m220.05 122.89h31.746v7.801h-31.746z" fill="none" stroke="#000" stroke-opacity=".96863" stroke-width=".52742"/>
+       <path d="m120.29 104.87c0 33.117-26.84 59.965-59.957 59.965-33.121 0-59.961-26.848-59.961-59.965 0-33.113 26.84-59.961 59.961-59.961 33.117 0 59.957 26.848 59.957 59.961z" fill="#faa" stroke="#000" stroke-dasharray="1.5, 1.5" stroke-width=".75"/>
+       <path d="m99.172 104.87c0 21.449-17.387 38.84-38.836 38.84-21.453 0-38.84-17.391-38.84-38.84s17.387-38.84 38.84-38.84c21.449 0 38.836 17.391 38.836 38.84z" fill="#fff" stroke="#0055d4" stroke-width="1.7008"/>
+       <g clip-path="url(#clipPath28-3)">
+        <g clip-path="url(#clipPath32-6)">
+         <g clip-path="url(#clipPath36-9)">
+          <g clip-path="url(#clipPath40-2)">
+           <g clip-path="url(#clipPath44-0)">
+            <g clip-path="url(#clipPath48-3)">
+             <g clip-path="url(#clipPath52-0)">
+              <path d="m0.074 112.68h118.57v63.637h-118.57z" fill="#b3b3b3" stroke="#000" stroke-width=".85039"/>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <path d="m24.73 120.68h71.317" fill="none" stroke="#000" stroke-width=".56693"/>
+        <path d="m29.82 128.38h61.047" fill="none" stroke="#000" stroke-width=".56693"/>
+        <path d="m37.645 136.27h45.218" fill="none" stroke="#000" stroke-width=".56693"/>
+       </g>
+       <path d="m99.172 104.87c0 21.449-17.387 38.84-38.836 38.84-21.453 0-38.84-17.391-38.84-38.84s17.387-38.84 38.84-38.84c21.449 0 38.836 17.391 38.836 38.84z" fill="none" stroke="#f00" stroke-width="1.7008"/>
+       <g font-family="'Bitstream Vera Sans'" font-size="12px">
+        <text transform="translate(42.157 84.702)" fill="#ff0000" xml:space="preserve"><tspan x="0 7.6079998 17.952 26.184" y="0">SMBH</tspan></text>
+        <text transform="translate(131.55 12.924)" fill="#0066ff" xml:space="preserve"><tspan x="0 7.6079998 14.952" y="0">gas</tspan></text>
+        <text transform="translate(390.78 112.45)" fill="#d4aa00" xml:space="preserve"><tspan x="0 6.2399998 10.944 18.288 23.219999" y="0">stars</tspan></text>
+        <text transform="translate(37.637 60.749)" fill="#ff6060" xml:space="preserve"><tspan x="0 8.0039997 17.292 26.268 30.072001 33.396 40.776001" y="0">AGN jet</tspan></text>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m212.16-121.48c-275.4 18.484-119.6-232.3 1.113-9.547" fill="none" stroke="#ff6060" stroke-width="1.0006"/>
+       </g>
+       <g transform="matrix(-.54189 1 1 .54189 0 0)">
+        <path d="m20.749 219.75 3.52-3.519-12.318 3.521 12.317 3.518z" fill="#ff6060" fill-rule="evenodd" stroke="#ff6060" stroke-width=".93842"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m257.44-100.88c54.074 27.574 102.68 15.059 136.4 2.418" fill="none" stroke="#fc0" stroke-width="1.0006"/>
+       </g>
+       <g transform="matrix(-1 -.3748 -.3748 1 0 0)">
+        <path d="m-368.32-43.096 3.748-3.747-13.119 3.747 13.118 3.748z" fill="#fc0" fill-rule="evenodd" stroke="#fc0" stroke-width=".99945"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m387.96-127.05c-70.285-23.726-108.52-6.074-129.83 0.973" fill="none" stroke="#fc0" stroke-width="1.0006"/>
+       </g>
+       <g transform="matrix(1 .3306 .3306 -1 0 0)">
+        <path d="m279.77-36.726 3.799-3.799-13.299 3.798 13.302 3.801z" fill="#fc0" fill-rule="evenodd" stroke="#fc0" stroke-width="1.0134"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m219.08-96.461c-57.551 27.348-109.59 11.766-136.62-4.664" fill="none" stroke="#f00" stroke-width="1.0006"/>
+       </g>
+       <g transform="matrix(1 -.60784 -.60784 -1 0 0)">
+        <path d="m23.881-110.44 3.418-3.418-11.97 3.416 11.971 3.423z" fill="#f00" fill-rule="evenodd" stroke="#f00" stroke-width=".91206"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m236.34-91.5v32.715" fill="none" stroke="#06f" stroke-width=".75118"/>
+       </g>
+       <g transform="matrix(0,-1,-1,0,0,0)">
+        <path d="m-83.988-236.34 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+       <g transform="matrix(0,1,1,0,0,0)">
+        <path d="m66.297 236.34 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m236.34-167.47v32.715" fill="none" stroke="#06f" stroke-width=".75118"/>
+       </g>
+       <g transform="matrix(0,-1,-1,0,0,0)">
+        <path d="m-159.96-236.34 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+       <g transform="matrix(0,1,1,0,0,0)">
+        <path d="m142.27 236.34 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m289.99-114.11h-32.715" fill="none" stroke="#06f" stroke-width=".75118"/>
+       </g>
+       <g transform="scale(-1,1)">
+        <path d="m-282.48 114.11 3.003-3.004-10.515 3.004 10.515 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+       <g transform="scale(1,-1)" stroke="#06f">
+        <path d="m264.79-114.11 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke-width=".80126"/>
+        <path d="m214.75-114.11h-32.715" fill="none" stroke-width=".75118"/>
+       </g>
+       <g transform="scale(-1,1)">
+        <path d="m-207.23 114.11 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+       <g transform="scale(1,-1)">
+        <path d="m189.54-114.11 3.004-3.004-10.516 3.004 10.516 3.004z" fill="#06f" fill-rule="evenodd" stroke="#06f" stroke-width=".80126"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
