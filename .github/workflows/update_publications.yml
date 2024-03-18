@@ -12,6 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: github-pages
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     steps:
     - uses: actions/checkout@v4
 
@@ -32,3 +34,5 @@ jobs:
       uses: actions-js/push@v1.4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        # Push to the same branch
+        branch: ${{ env.BRANCH_NAME }}
