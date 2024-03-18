@@ -21,6 +21,8 @@ jobs:
       run: pip install ads jinja2
 
     - name: "Update publication list"
+      env:
+        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
       run: python utils/get_publications.py
 
     - name: Commit & Push changes
