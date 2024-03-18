@@ -3,26 +3,36 @@ name: Update publications
 on:
   schedule:
     - cron: "0 0 * * MON"
+  # Also run on PR
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     steps:
-    - uses: actions/checkout@v2
-      with:
-        persist-credentials: false
-        fetch-depth: 0
+    - uses: actions/checkout@v4
 
     - name: Install Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
 
     - name: "Install dependencies"
       run: pip install ads jinja2
 
     - name: "Update publication list"
-      run: python utils/get_publications.py
+      env:
+        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
+      run: |
+        python utils/get_publications.py
+        git diff
 
     - name: Commit & Push changes
-      uses: actions-js/push@master
+      uses: actions-js/push@v1.4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        # Push to the same branch
+        branch: ${{ env.BRANCH_NAME }}
