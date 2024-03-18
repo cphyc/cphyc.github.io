@@ -3,6 +3,10 @@ name: Update publications
 on:
   schedule:
     - cron: "0 0 * * MON"
+  # Also run on PR
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
