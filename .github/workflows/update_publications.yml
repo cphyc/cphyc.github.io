@@ -24,7 +24,9 @@ jobs:
     - name: "Update publication list"
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
-      run: python utils/get_publications.py
+      run: |
+        python utils/get_publications.py
+        git diff
 
     - name: Commit & Push changes
       uses: actions-js/push@v1.4
