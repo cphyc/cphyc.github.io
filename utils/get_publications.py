@@ -199,7 +199,7 @@ def process_papers(papers: List[ads.search.Article], main_author: Author) -> Sta
 
 
 def format_results(stats: StatsResult, author: str) -> str:
-    last_check = date.today().strftime(r"%d %B %Y")
+    last_check = date.today().strftime(r"%d %B %Y at %H:%M")
 
     author_str = urllib.parse.quote(author)
 
