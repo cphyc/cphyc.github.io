@@ -2,7 +2,7 @@ name: Update publications
 
 on:
   schedule:
-    - cron: "0 0 * * MON"
+    - cron: "0 0 * * *"
   # Also run on PR
   pull_request:
     branches:
