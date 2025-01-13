@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Corentin Cadiou, post-doc in astrophysics & cosmology
-description: I'm Corentin Cadiou, a post-doctoral research assistant in astrophysics currently working at Lund University, Sweden.
+description: I'm Corentin Cadiou, a researcher in astrophysics currently working at Institut d'Astrophysique de Paris, France.
 ---
 
-I'm Corentin cadiou, a post-doctoral research assistant at the [Lund Observatory, Sweden](https://www.astro.lu.se/).
+I'm Corentin cadiou, a researcher at the [Institut d'Astrophysique de Paris, France](https://www.iap.fr/).
 I completed my PhD in 2019 at the [<emph>Institut d'Astrophysique de Paris (IAP)</emph>](http://www.iap.fr/) on “The impact of the large scale structures of the Universe on dark matter halo and galaxy formation”.
 My PhD is available [online](https://pub.cphyc.me/Science/thesis_CorentinCadiou.pdf).
 
