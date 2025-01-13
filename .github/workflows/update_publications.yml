@@ -23,12 +23,23 @@ jobs:
     - name: "Install dependencies"
       run: pip install ads jinja2
 
+    - name: Install typst
+      uses: typst-community/setup-typst@v3
+
     - name: "Update publication list"
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
       run: |
-        python utils/get_publications.py
+        python utils/get_publications.py  -a "Cadiou, C" -o publications/index.html
         git diff
+
+    - name: "Update CV"
+      env:
+        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
+      run: |
+        python cv/get_publications.py -a "Cadiou, C" -f typst -o pub.include.typ
+        typst c cv/main.typ cv/main.pdf
+
 
     - name: Commit & Push changes
       uses: actions-js/push@v1.4
