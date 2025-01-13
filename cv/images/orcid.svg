@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="orcid.svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 512 512;"
+   viewBox="0 0 512 512"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   inkscape:current-layer="Layer_1"
+   inkscape:window-maximized="0"
+   inkscape:window-y="42"
+   inkscape:window-x="0"
+   inkscape:cy="373.26848"
+   inkscape:cx="-423.63738"
+   inkscape:zoom="0.62177559"
+   showgrid="false"
+   id="namedview7"
+   inkscape:window-height="1037"
+   inkscape:window-width="1918"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<g
+   inkscape:export-ydpi="12"
+   inkscape:export-xdpi="12"
+   id="g4">
+	<path
+   id="path2"
+   d="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z M256,39.4   c119.9,0,216.6,96.8,216.6,216.6S375.9,472.6,256,472.6S39.4,375.9,39.4,256S136.1,39.4,256,39.4z M157.5,98.5   c-10.9,0-19.7,8.8-19.7,19.7s8.8,19.7,19.7,19.7s19.7-8.8,19.7-19.7S168.4,98.5,157.5,98.5z M137.8,157.5v216.6h39.4V157.5H137.8z    M216.6,157.5v19.7v196.9h88.6c59.6,0,108.3-48.7,108.3-108.3s-48.7-108.3-108.3-108.3H216.6z M256,196.9h49.2   c38.3,0,68.9,30.6,68.9,68.9s-30.6,68.9-68.9,68.9H256V196.9z" />
+</g>
+</svg>

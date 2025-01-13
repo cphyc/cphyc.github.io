@@ -37,8 +37,8 @@ jobs:
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
       run: |
-        python cv/get_publications.py -a "Cadiou, C" -f typst -o pub.include.typ
-        typst c cv/main.typ cv/main.pdf
+        python cv/get_publications.py -a "Cadiou, C" -f typst -o cv/pub.include.typ
+        typst c cv/main.typ cv/cv.pdf
 
 
     - name: Commit & Push changes
