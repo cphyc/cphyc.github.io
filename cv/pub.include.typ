@@ -2,9 +2,9 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[13] articles as lead or co-lead author (#highlight[11] already published in MNRAS and A&A).
-    I also contributed to #highlight[14] other articles.
-    My papers have been cited #highlight[652] times (_h_-index of 14 as
-    of #nth({19}) January 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[16] other articles.
+    My papers have been cited #highlight[655] times (_h_-index of 14 as
+    of #nth({25}) January 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -22,6 +22,10 @@
 
     == Published articles
 
+    +  “*RAMSES-yOMP: Performance Optimizations for the Astrophysical Hydrodynamic Simulation Code RAMSES*”,
+      Han, Dubois, Lee, Kim, #hl_author[Cadiou]~\& Yi, _in The Astrophysical Journal, 978, 1, 96-106_, (2025).    
+    +  “*EDGE-INFERNO: Simulating Every Observable Star in Faint Dwarf Galaxies and Their Consequences for Resolved-star Photometric Surveys*”,
+      Andersson, Rey, Pontzen, #hl_author[Cadiou], Agertz, Read~\& Martin, _in The Astrophysical Journal, 978, 2, 129-139_, (2025).    
     +  “*Running with the bulls: The frequency of star-disc encounters in the Taurus star-forming region*”,
       Winter, Benisty, Shuai, Dûchene, Cuello, Anania, #hl_author[Cadiou]~\& Joncour, _in Astronomy and Astrophysics, 691, A43_, (2024).    
     +  “*The AGORA High-resolution Galaxy Simulations Comparison Project. IV. Halo and Galaxy Mass Assembly in a Cosmological Zoom-in Simulation at z ≤ 2*”,
