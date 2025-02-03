@@ -141,7 +141,7 @@
     date: [2025--now],
     title: [_Chargé de recherche_ (Assistant Professor)],
     location: [IAP, France #box(baseline: 30%, image(height: 1.5em, "images/IAP.png"))],
-    description: []
+    description: [Permanent, 100%-research position. Recruited on a interdisciplinary project to develop high-performance computing and data science in astronomy.]
     ),
     ..entry(
     date: [2022--25],
@@ -268,14 +268,20 @@ Over my career, I have been *PI or co-I of projects securing #SI(90, "MCPU.hr")*
 = Awards and recognitions
 #entryGroup(
     ..entry(
-        date: [2023-24],
-        title: [eSSENCE grant ($100 thin 000 thin €$)],
+        date: [2024-26],
+        title: [eSSENCE grant ($1 thin 100 thin 000 "kr" approx 95 thin 000 thin €$)],
         location: [Lund University, Sweden],
         description: [Research grant for the project: "Galaxy formation in the exascale era".]
     ),
     ..entry(
-        date: [2023-24],
-        title: [Fysiografen grant ($12 thin 000 thin €$)],
+        date: [2024-26],
+        title: [Fysiografen grant ($110 thin 000 "kr" approx 9 thin 500 thin €$)],
+        location: [Lund University, Sweden],
+        description: [Research grant for the project: "The formation of disk, from cosmic dawn to cosmic noon".]
+    ),
+    ..entry(
+        date: [2023-25],
+        title: [Fysiografen grant ($140 thin 000 "kr" approx  2 thin 000 thin €$)],
         location: [Lund University, Sweden],
         description: [Research grant for the project: "The role of environment in driving galaxy spin".]
     ),
