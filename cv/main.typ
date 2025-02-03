@@ -162,6 +162,7 @@
     description: [#v(-1em)Supervisors: C.~Pichon and Y.~Dubois.]
     ),
 )
+#v(-0.5cm)
 
 = Education
 #entryGroup(
