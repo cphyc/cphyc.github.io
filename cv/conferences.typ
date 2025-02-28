@@ -1,7 +1,7 @@
 k#import "cv.typ": *
-#import "@preview/tablex:0.0.5": tablex, rowspanx, colspanx, cellx, vlinex, hlinex
-#import "@preview/nth:0.2.0": nth
-#import "@preview/fontawesome:0.1.0": *
+#import "@preview/tablex:0.0.9": tablex, rowspanx, colspanx, cellx, vlinex, hlinex
+#import "@preview/nth:1.0.1": nth
+#import "@preview/fontawesome:0.5.0": *
 
 #show regex("\bRamses\b"): smallcaps
 #show regex("\bDyablo\b"): smallcaps

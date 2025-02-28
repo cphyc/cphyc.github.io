@@ -5,8 +5,8 @@
  * License: MIT (see included file LICENSE)
  */
 
-#import "@preview/fontawesome:0.1.0": *
-#import "@preview/tablex:0.0.5": tablex, rowspanx, colspanx, cellx
+#import "@preview/fontawesome:0.5.0": *
+#import "@preview/tablex:0.0.9": tablex, rowspanx, colspanx, cellx
  
 #let headercolor = gray
 #let pblue = rgb("#433594ff")
@@ -188,7 +188,7 @@
   v(3mm)
   let c = ()
   for contact in contacts {
-    c.push(fa-icon(contact.icon, fa-set: contact.at("fa-set", default: "Free"), fill: pblue))
+    c.push(fa-icon(contact.icon, fill: pblue))
     c.push(contact.text)
   }
 

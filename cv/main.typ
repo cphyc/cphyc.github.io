@@ -1,7 +1,7 @@
 #import "cv.typ": *
-#import "@preview/tablex:0.0.5": tablex, rowspanx, colspanx, cellx, vlinex, hlinex
-#import "@preview/nth:0.2.0": nth
-#import "@preview/fontawesome:0.1.0": *
+#import "@preview/tablex:0.0.9": tablex, rowspanx, colspanx, cellx, vlinex, hlinex
+#import "@preview/nth:1.0.1": nth
+#import "@preview/fontawesome:0.5.0": *
 
 #show regex("\bRamses\b"): smallcaps
 #show regex("\bDyablo\b"): smallcaps
@@ -24,22 +24,18 @@
       (
         (
           icon: "cake",
-          fa-set: "Free Solid",
           text: [16/09/1992],
         ),
         (
           icon: "mars",
-          fa-set: "Free Solid",
           text: [Male],
         ),
         (
           icon: "globe",
-          fa-set: "Free Solid",
           text: [French],
         ),
         (
           icon: "envelope",
-          fa-set: "Free Solid",
           text: [Institut d'Astrophysique de Paris (IAP)\
                  98 bis boulevard Arago\
                  75014 Paris, France
@@ -47,28 +43,23 @@
         ),
         (
           icon: "link",
-          fa-set: "Free Solid",
           text: link("https://cphyc.github.io")[cphyc.github.io],
         ),
         (
           icon: "github",
-          fa-set: "Brands",
           text: link("https://github.com/cphyc")[github.com/cphyc],
         ),
         (
           icon: "orcid",
-          fa-set: "Brands",
           text: link("https://orcid.org/0000-0003-2285-0332")[0000-0003-
 2285-0332],
         ),
         (
           icon: "phone",
-          fa-set: "Free Solid",
           text: link("tel:+33 6 43 18 66 83")[+33 6 43 18 66 83],
         ),
         (
           icon: "envelope",
-          fa-set: "Free Solid",
           text: link("mailto:corentin.cadiou@iap.fr")[corentin.cadiou\@iap.fr],
         ),
       )
@@ -450,8 +441,6 @@ Over my career, I have been *PI or co-I of projects securing #SI(90, "MCPU.hr")*
 = Visiting programs, schools and conferences
 
 #include "conferences.typ"
-
-#pagebreak()
 
 = Publication list
 
