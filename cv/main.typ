@@ -189,7 +189,7 @@
 )
 
 = Time allocations
-Over my career, I have been *PI or co-I of projects securing #SI(90, "MCPU.hr")* (700,000€, assuming a price of 0.01€/CPU hr). My developments also enabled additional projects for a total of more than #SI(100, "MCPU.hr").
+Over my career, I have been *PI or co-I of projects securing #SI(140, "MCPU.hr")* (1,400,000€, assuming a price of 0.01€/CPU hr). My developments also enabled additional projects for a total of more than #SI(100, "MCPU.hr").
 #v(-1em)
 #entryGroup(
     //   ..entry(
@@ -199,10 +199,10 @@ Over my career, I have been *PI or co-I of projects securing #SI(90, "MCPU.hr")*
     //     description: [*PI* of an #SI(18, "Mcpu.hr") allocation on Swedish national infrastructures.]
     // ),
      ..entry(
-        date: [2024],
+        date: [2024--now],
         title: [(co-I) Harkonnens simulations],
         location: [#box(baseline: 10%, image(height: .9em, "images/BSC-blue.svg"))],
-        description: [#v(-.5em)*#SI(20, "MCPU.hr") allocation* (Spanish national call). Suite of high-resolution simulations to support ESA's ARRAKIHS mission to investigate the nature of dark matter.]
+        description: [#v(-.5em)*#SI(60, "MCPU.hr") allocation* (Spanish national call). Suite of high-resolution simulations to support ESA's ARRAKIHS mission to investigate the nature of dark matter.]
     ),
     ..entry(
         date: [2024],
