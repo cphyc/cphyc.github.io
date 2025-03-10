@@ -2,13 +2,15 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[13] articles as lead or co-lead author (#highlight[12] already published in MNRAS and A&A).
-    I also contributed to #highlight[14] other articles.
-    My papers have been cited #highlight[683] times (_h_-index of 14 as
-    of #nth({07}) March 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[15] other articles.
+    My papers have been cited #highlight[690] times (_h_-index of 14 as
+    of #nth({10}) March 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
+    +  “*EDGE: The emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*”,
+      Rey, Taylor, Gray, Kim, Andersson, Pontzen, Agertz, Read, #hl_author[Cadiou], Yates, Orkney, Scholte, Saintonge, Breneman, McQuinn, Muni~\& Das, _submitted to Monthly Notices of the Royal Astronomical Society_, (2025).    
     +  “*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*”,
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _submitted to Monthly Notices of the Royal Astronomical Society_, (2024).    
     +  “*The causal effect of cosmic filaments on dark matter halos*”,
