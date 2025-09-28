@@ -189,9 +189,9 @@ def process_papers(
             else:
                 page = start_page or None
             details = (
-                [paper.volume] if paper.volume else [],
-                [paper.issue] if paper.issue else [],
-                [page] if page else [],
+                [str(paper.volume)] if paper.volume else [],
+                [str(paper.issue)] if paper.issue else [],
+                [str(page)] if page else [],
             )
             # This happens for advanced publications
             if any(details):
