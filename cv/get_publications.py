@@ -289,7 +289,9 @@ def href(url: str, text: str, format: str) -> str:
 
 
 def format_results(stats: StatsResult, author: str, *, format: str) -> str:
-    last_check = date.today().strftime(r"\nth{%d} %B %Y" if format == "latex" else "#nth({%d}) %B %Y")
+    last_check = date.today().strftime(
+        r"\nth{%d} %B %Y" if format == "latex" else "#nth({%d}) %B %Y"
+    )
 
     author_str = urllib.parse.quote(author)
     AA_str = r"A\&A" if format == "latex" else "A&A"
@@ -333,10 +335,10 @@ def format_results(stats: StatsResult, author: str, *, format: str) -> str:
     if format == "typst":
         # Wrap everything into a variable
         content = (
-            "#import \"@preview/nth:0.2.0\": nth\n" +
-            "#let publist = (hl_author) => [\n" +
-            indent(content, "    ") +
-            "\n]\n"
+            '#import "@preview/nth:0.2.0": nth\n'
+            + "#let publist = (hl_author) => [\n"
+            + indent(content, "    ")
+            + "\n]\n"
         )
     return content
 
