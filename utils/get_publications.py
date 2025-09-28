@@ -1,7 +1,6 @@
 import argparse
 import dataclasses
 from datetime import date
-from textwrap import dedent, indent
 from typing import List, Optional, Sequence
 import urllib
 import re
@@ -68,10 +67,13 @@ def get_papers(author: str) -> List[ads.search.Article]:
 
     return list(sorted(papers, key=lambda p: (p.year, get_arxiv(p)), reverse=True))
 
+
 @dataclasses.dataclass(frozen=True)
 class Author:
     first: str
     last: str
+
+
 @dataclasses.dataclass(frozen=True)
 class PaperInfo:
     url: str
@@ -79,6 +81,7 @@ class PaperInfo:
     title: str
     journal: str
     year: int
+
 
 @dataclasses.dataclass(frozen=True)
 class StatsResult:
@@ -90,6 +93,7 @@ class StatsResult:
     npublished: int
     nsubmitted: int
 
+
 def normalize_author(author: str) -> Author:
     try:
         last, first = (_.strip() for _ in author.split(","))
@@ -99,7 +103,9 @@ def normalize_author(author: str) -> Author:
     return Author(first=first, last=last)
 
 
-def process_papers(papers: List[ads.search.Article], main_author: Author) -> StatsResult:
+def process_papers(
+    papers: List[ads.search.Article], main_author: Author
+) -> StatsResult:
     tot_citations = 0
 
     max_pos = 0
@@ -209,17 +215,15 @@ def format_results(stats: StatsResult, author: str) -> str:
         template = env.from_string(f.read())
 
     return template.render(
-        stats=stats,
-        last_check=last_check,
-        author=author_str,
-        highlight_author="Cadiou"
+        stats=stats, last_check=last_check, author=author_str, highlight_author="Cadiou"
     )
-
 
 
 def main(argv: Optional[Sequence]) -> int:
     parser = argparse.ArgumentParser(description="Get the list of papers from ADS")
-    parser.add_argument("-o", "--output", type=str, default=root / "publications" / "index.html")
+    parser.add_argument(
+        "-o", "--output", type=str, default=root / "publications" / "index.html"
+    )
     parser.add_argument("-a", "--author", type=str, default="Cadiou, C")
 
     args = parser.parse_args(argv)
