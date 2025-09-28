@@ -1,25 +1,27 @@
 #import "@preview/nth:0.2.0": nth
 #let publist = (hl_author) => [
 
-    I have submitted #highlight[13] articles as lead or co-lead author (#highlight[12] already published in MNRAS and A&A).
-    I also contributed to #highlight[15] other articles.
-    My papers have been cited #highlight[728] times (_h_-index of 14 as
-    of #nth({06}) April 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I have submitted #highlight[14] articles as lead or co-lead author (all published in MNRAS and A&A).
+    I also contributed to #highlight[17] other articles.
+    My papers have been cited #highlight[848] times (_h_-index of 15 as
+    of #nth({28}) September 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
-    +  “*EDGE: The emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*”,
-      Rey, Taylor, Gray, Kim, Andersson, Pontzen, Agertz, Read, #hl_author[Cadiou], Yates, Orkney, Scholte, Saintonge, Breneman, McQuinn, Muni~\& Das, _submitted to Monthly Notices of the Royal Astronomical Society_, (2025).    
+    +  “*Introducing NewCluster: the first half of the history of a high-resolution cluster simulation*”,
+      Han, Yi, Dubois, Rhee, Jeon, Jang, Byun, #hl_author[Cadiou], Kim, Kimm~\& Pichon, _submitted to Monthly Notices of the Royal Astronomical Society_, (2025).    
     +  “*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*”,
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _submitted to Monthly Notices of the Royal Astronomical Society_, (2024).    
-    +  “*The causal effect of cosmic filaments on dark matter halos*”,
-      Storck, #hl_author[Cadiou], Agertz~\& Galárraga-Espinosa, _submitted to Monthly Notices of the Royal Astronomical Society_, (2024).    
 
     == Published articles
 
+    +  “*EDGE: the emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*”,
+      Rey, Taylor, Gray, Kim, Andersson, Pontzen, Agertz, Read, #hl_author[Cadiou], Yates, Orkney, Scholte, Saintonge, Breneman, McQuinn, Muni~\& Das, _in Monthly Notices of the Royal Astronomical Society, 541, 2, 1195-1218_, (2025).    
     +  “*RAMSES-yOMP: Performance Optimizations for the Astrophysical Hydrodynamic Simulation Code RAMSES*”,
       Han, Dubois, Lee, Kim, #hl_author[Cadiou]~\& Yi, _in The Astrophysical Journal, 978, 1, 96-106_, (2025).    
+    +  “*Exploring the causal effect of cosmic filaments on dark matter haloes*”,
+      Storck, #hl_author[Cadiou], Agertz~\& Galárraga-Espinosa, _in Monthly Notices of the Royal Astronomical Society, 539, 1, 487-501_, (2025).    
     +  “*EDGE-INFERNO: Simulating Every Observable Star in Faint Dwarf Galaxies and Their Consequences for Resolved-star Photometric Surveys*”,
       Andersson, Rey, Pontzen, #hl_author[Cadiou], Agertz, Read~\& Martin, _in The Astrophysical Journal, 978, 2, 129-139_, (2025).    
     +  “*How complex are galaxies? A non-parametric estimation of the intrinsic dimensionality of wide-band photometric data*”,
@@ -37,13 +39,15 @@
     +  “*Evolution of cosmic filaments in the MTNG simulation*”,
       Galárraga-Espinosa, #hl_author[Cadiou], Gouin, White, Springel, Pakmor, Hadzhiyska, Bose, Ferlito, Hernquist, Kannan, Barrera, Maria Delgado~\& Hernández-Aguayo, _in Astronomy and Astrophysics, 684, A63_, (2024).    
     +  “*Hot gas accretion fuels star formation faster than cold accretion in high redshift galaxies*”,
-      Kocjan, #hl_author[Cadiou], Agertz~\& Pontzen, _in American Astronomical Society Meeting Abstracts, 243, 306.02_, (2024).    
+      Kocjan, #hl_author[Cadiou], Agertz~\& Pontzen, _in American Astronomical Society Meeting Abstracts \#243, 243, 306.02_, (2024).    
     +  “*Stellar angular momentum can be controlled from cosmological initial conditions*”,
       #hl_author[Cadiou], Pontzen~\& Peiris, _in Monthly Notices of the Royal Astronomical Society, 517, 3, 3459-3469_, (2022).    
     +  “*Forecasts for WEAVE-QSO: 3D clustering and connectivity of critical points with Lyman-α tomography*”,
       Kraljic, Laigle, Pichon, Peirani, Codis, Shim, #hl_author[Cadiou], Pogosyan, Arnouts, Pieri, Iršič, Morrison, Oñorbe, Pérez-Ràfols~\& Dalton, _in Monthly Notices of the Royal Astronomical Society, 514, 1, 1359-1386_, (2022).    
     +  “*Gravitational torques dominate the dynamics of accreted gas at z > 2*”,
       #hl_author[Cadiou], Dubois~\& Pichon, _in Monthly Notices of the Royal Astronomical Society, 514, 4, 5429-5443_, (2022).    
+    +  “*On the causal origin of the angular momentum of dark matter halos and galaxies*”,
+      #hl_author[Cadiou], _in EAS2022, European Astronomical Society Annual Meeting, 476_, (2022).    
     +  “*The causal effect of environment on halo mass and concentration*”,
       #hl_author[Cadiou], Pontzen, Peiris~\& Lucie-Smith, _in Monthly Notices of the Royal Astronomical Society, 508, 1, 1189-1195_, (2021).    
     +  “*Angular momentum evolution can be predicted from cosmological initial conditions*”,
@@ -56,6 +60,8 @@
       Mitchell, Blaizot, #hl_author[Cadiou], Dubois, Garel~\& Rosdahl, _in Monthly Notices of the Royal Astronomical Society, 501, 4, 5757-5776_, (2021).    
     +  “*The OBELISK simulation: Galaxies contribute more than AGN to H I reionization of protoclusters*”,
       Trebitsch, Dubois, Volonteri, Pfister, #hl_author[Cadiou], Katz, Rosdahl, Kimm, Pichon, Beckmann, Devriendt~\& Slyz, _in Astronomy and Astrophysics, 653, A154_, (2021).    
+    +  “*The clustering of critical points in the evolving cosmic web*”,
+      Shim, Codis, Pichon, Pogosyan~\& #hl_author[Cadiou], _in The Bulletin of The Korean Astronomical Society, 46, 1, 47.2_, (2021).    
     +  “*When do cosmic peaks, filaments, or walls merge? A theory of critical events in a multiscale landscape*”,
       #hl_author[Cadiou], Pichon, Codis, Musso, Pogosyan, Dubois, Cardoso~\& Prunet, _in Monthly Notices of the Royal Astronomical Society, 496, 4, 4787-4822_, (2020).    
     +  “*Dense gas formation and destruction in a simulated Perseus-like galaxy cluster with spin-driven black hole feedback*”,
