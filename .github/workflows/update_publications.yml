@@ -46,7 +46,7 @@ jobs:
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
       run: |
-        python utils/get_publications.py -a "Cadiou, C" -o publications/index.html
+        python utils/get_publications.py -a "Cadiou, C" -f html -o publications/index.html
         echo "Publications updated. Changes:"
         git diff --name-only publications/
 
@@ -54,7 +54,7 @@ jobs:
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
       run: |
-        python cv/get_publications.py -a "Cadiou, C" -f typst -o cv/pub.include.typ
+        python utils/get_publications.py -a "Cadiou, C" -f typst -o cv/pub.include.typ
         typst compile cv/main.typ cv/cv.pdf
         echo "CV updated. Changes:"
         git diff --name-only cv/
