@@ -7,6 +7,12 @@ on:
   pull_request:
     branches:
       - main
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
@@ -15,35 +21,61 @@ jobs:
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     steps:
-    - uses: actions/checkout@v4
-
-    - name: Install Python
-      uses: actions/setup-python@v5
-
-    - name: "Install dependencies"
-      run: pip install ads jinja2
-
-    - name: Install typst
-      uses: typst-community/setup-typst@v3
-
-    - name: "Update publication list"
-      env:
-        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
-      run: |
-        python utils/get_publications.py  -a "Cadiou, C" -o publications/index.html
-        git diff
-
-    - name: "Update CV"
-      env:
-        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
-      run: |
-        python cv/get_publications.py -a "Cadiou, C" -f typst -o cv/pub.include.typ
-        typst c cv/main.typ cv/cv.pdf
-
-
-    - name: Commit & Push changes
-      uses: actions-js/push@v1.4
+    - name: Checkout repository
+      uses: actions/checkout@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        # Push to the same branch
-        branch: ${{ env.BRANCH_NAME }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+        cache: 'pip'
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install ads jinja2
+
+    - name: Setup Typst
+      uses: typst-community/setup-typst@v3
+      with:
+        typst-version: 'latest'
+
+    - name: Update publication list
+      env:
+        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
+      run: |
+        python utils/get_publications.py -a "Cadiou, C" -f html -o publications/index.html
+        echo "Publications updated. Changes:"
+        git diff --name-only publications/
+
+    - name: Update CV
+      env:
+        ADS_DEV_KEY: ${{ secrets.ADS_DEV_KEY }}
+      run: |
+        python utils/get_publications.py -a "Cadiou, C" -f typst -o cv/pub.include.typ
+        typst compile cv/main.typ cv/cv.pdf
+        echo "CV updated. Changes:"
+        git diff --name-only cv/
+
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Files changed:"
+          git status --porcelain
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
+        fi
+
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add publications/index.html cv/pub.include.typ cv/cv.pdf
+        git commit -m "Update publications and CV [skip ci]" -m "Automated update via GitHub Actions"
+        git push origin ${{ env.BRANCH_NAME }}
