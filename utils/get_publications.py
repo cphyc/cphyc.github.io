@@ -413,6 +413,19 @@ def format_results(stats: StatsResult, author: str, format: str = "html") -> str
         raise ValueError(f"Unknown format: {format}")
 
 
+def cleanup_content(content: str) -> str:
+    """Remove trailing whitespaces and ensure file ends with a newline"""
+    # Split into lines, strip trailing whitespace from each line, rejoin
+    lines = [line.rstrip() for line in content.splitlines()]
+    
+    # Join lines back together and ensure single trailing newline
+    cleaned_content = '\n'.join(lines)
+    
+    # Ensure file ends with exactly one newline
+    if not cleaned_content.endswith('\n'):
+        cleaned_content += '\n'
+    
+    return cleaned_content
 def main(argv: Optional[Sequence]) -> int:
     parser = argparse.ArgumentParser(description="Get the list of papers from ADS")
     parser.add_argument(
@@ -441,11 +454,14 @@ def main(argv: Optional[Sequence]) -> int:
     res = process_papers(papers, main_author, format=args.format)
     content = format_results(res, args.author, format=args.format)
 
+    # Clean up content: remove trailing whitespaces and ensure newline at end
+    cleaned_content = cleanup_content(content)
+
     out = Path(args.output)
     if not out.parent.exists():
         out.parent.mkdir(parents=True)
 
-    out.write_text(content)
+    out.write_text(cleaned_content)
 
     return 0
 
