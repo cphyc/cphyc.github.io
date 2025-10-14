@@ -24,7 +24,7 @@ REPLACEMENTS = {
 # Additional replacements for CV format
 CV_REPLACEMENTS = {
     "Zenodo": _SKIP,
-    "arXiv e-prints": "submitted to Monthly Notices of the Royal Astronomical Society",
+    "arXiv e-prints": "submitted",
 }
 
 # Typst/LaTeX templates
