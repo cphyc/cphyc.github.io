@@ -3,8 +3,8 @@
 
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
     I also contributed to #highlight[26] other articles.
-    My papers have been cited #highlight[919] times (_h_-index of 16 as
-    of #nth({31}) October 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    My papers have been cited #highlight[921] times (_h_-index of 16 as
+    of #nth({01}) November 2025), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -14,7 +14,7 @@
     +  "*MEGATRON: Disentangling Physical Processes and Observational Bias in the Multi-Phase ISM of High-Redshift Galaxies*",
       Choustikov, Katz, Cameron, Saxena, Devriendt, Slyz, Rey, #hl_author[Cadiou], Blaizot, Kimm, Laseter, Matsumoto~\& Rosdahl, _submitted, arXiv:2510.06347_, (2025).
     +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
-      #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martín Álvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _submitted, arXiv:2510.05667_, (2025).
+      #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _submitted, arXiv:2510.05667_, (2025).
     +  "*MEGATRON: how the first stars create an iron metallicity plateau in the smallest dwarf galaxies*",
       Rey, Katz, #hl_author[Cadiou], Sanati, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Ji, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Revaz, Rodriguez Montero, Rosdahl, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _submitted, arXiv:2510.05232_, (2025).
     +  "*MEGATRON: Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation Hydrodynamics Simulations*",
