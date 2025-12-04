@@ -352,7 +352,7 @@ Over my career, I have been *PI or co-I of projects securing #SI(400, "MCPU.hr")
   ),
 
   ..entryDivider()[Community service],
-  ..entrynohl(
+  ..entry(
     date: [2025--now],
     title: [IAP Seminars],
     location: [],
@@ -386,8 +386,7 @@ Over my career, I have been *PI or co-I of projects securing #SI(400, "MCPU.hr")
     date: [2025--now],
     title: [PhD student supervisions],
     location: [],
-    description: [Supervision of 1 PhD student: The work of the students in bold led to a submitted paper:
-      S.~Errachi (IAP, Master 2, 25--26);
+    description: [Supervision of 1 PhD student: S.~Errachi (IAP, Master 2, 25--now);
     ],
   ),
   ..entry(
