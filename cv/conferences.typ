@@ -261,6 +261,18 @@ Invited talks at conferences and seminars are listed below. Poster presentations
   ),
   "Journal clubs": (
     (
+      date: [12/2025],
+      title: [Tsinghua Astronomy journal club],
+      location: [Tsinghua University, Beijing, China],
+      description: none,
+    ),
+    (
+      date: [12/2025],
+      title: [Yonsei journal club],
+      location: [Yonsei University, Seoul, South Korea],
+      description: none,
+    ),
+    (
       date: [04/2017],
       title: [CITA Journal Club],
       location: [CITA, Toronto, Canada],
