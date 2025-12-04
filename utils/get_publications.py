@@ -38,6 +38,12 @@ TEMPLATE = dict(
         % \myhref{{{arxiv_link}}}{{{arxiv_link}}}
     """
     ),
+    typst_arxiv=dedent(
+        """\
+        + {prefix} "*{title}*",
+          {authors}, _#link("{arxiv_link}")[{publication_status}{pub_details}]_, ({year}).\
+    """
+    ),
     typst=dedent(
         """\
         + {prefix} "*{title}*",
@@ -49,18 +55,13 @@ TEMPLATE = dict(
 
 def replace(key: str, format: str = "html") -> str:
     dummy = object()
-    
+
     # Use CV-specific replacements for LaTeX/Typst formats
     replacements = CV_REPLACEMENTS if format in ["latex", "typst"] else REPLACEMENTS
     val = replacements.get(key, dummy)
 
     if val is dummy:
-        val = (
-            key.replace("_", r"\_")
-            .replace("&", r"\&")
-            .replace("^", r"\^")
-            .replace("#", r"\#")
-        )
+        val = key.replace("_", r"\_").replace("&", r"\&").replace("^", r"\^").replace("#", r"\#")
 
     return str(val)
 
@@ -77,9 +78,12 @@ def get_arxiv(paper: ads.search.Article) -> str:
     return arxiv
 
 
-def get_papers(author: str) -> List[ads.search.Article]:
+def get_papers(author: str, year_range: tuple[int, int]) -> List[ads.search.Article]:
+    query = f"(author:'{author}') collection:astronomy"
+    if year_range:
+        query += f" year:[{year_range[0]} TO {year_range[1]}]"
     papers = ads.SearchQuery(
-        q=f"(author:'{author}') collection:astronomy",
+        q=query,
         fl=[
             "title",
             "citation_count",
@@ -90,7 +94,7 @@ def get_papers(author: str) -> List[ads.search.Article]:
             "pub",
             "identifier",
             "volume",
-            "issue", 
+            "issue",
             "page",
             "page_count",
             "doi",
@@ -151,9 +155,7 @@ def normalize_author_for_format(author: str, main_author: str, format: str) -> s
     return auth
 
 
-def process_papers(
-    papers: List[ads.search.Article], main_author: Author, format: str = "html"
-) -> StatsResult:
+def process_papers(papers: List[ads.search.Article], main_author: Author, format: str = "html") -> StatsResult:
     tot_citations = 0
 
     max_pos = 0
@@ -173,7 +175,7 @@ def process_papers(
     stats = []
     year = None
     npublished, nsubmitted = 0, 0
-    
+
     for paper in papers:
         if year is None or year != paper.year:
             year = paper.year
@@ -183,29 +185,29 @@ def process_papers(
         # Process authors for HTML format
         html_authors = [normalize_author(paper.author[0])]
         iend = min(max_pos + 1, len(paper.author))
-        for i, author in enumerate(paper.author[1:iend-1]):
+        for i, author in enumerate(paper.author[1 : iend - 1]):
             html_authors.append(normalize_author(author))
         if len(paper.author) > max_pos:
             html_authors.append(Author(first="", last="et al"))
         elif len(paper.author) > 1 and iend > 1:
-            html_authors.append(normalize_author(paper.author[iend-1]))
+            html_authors.append(normalize_author(paper.author[iend - 1]))
 
         # Process authors for LaTeX/Typst format
         if format in ["latex", "typst"]:
             formatted_authors = normalize_author_for_format(paper.author[0], main_author.last, format)
-            for i, author in enumerate(paper.author[1:iend-1]):
+            for i, author in enumerate(paper.author[1 : iend - 1]):
                 formatted_authors += ", " + normalize_author_for_format(author, main_author.last, format)
             if len(paper.author) > 1:
                 if len(paper.author) > max_pos:
                     formatted_authors += " et al"
                 else:
                     formatted_authors += r"~\& " + normalize_author_for_format(
-                        paper.author[iend-1], main_author.last, format
+                        paper.author[iend - 1], main_author.last, format
                     )
 
         arxiv = get_arxiv(paper)
         publication_status = replace(paper.pub, format)
-        
+
         if publication_status == _SKIP:
             continue
 
@@ -239,18 +241,28 @@ def process_papers(
         # Create formatted entries for LaTeX/Typst
         if format in ["latex", "typst"]:
             prefix = ""
-                
+
             # Determine publication details
             pub_details = ""
-            if hasattr(paper, 'volume') and paper.volume:
+            if hasattr(paper, "volume") and paper.volume:
                 pub_details += f", {paper.volume}"
-            if hasattr(paper, 'page') and paper.page:
+            if hasattr(paper, "page") and paper.page:
                 if isinstance(paper.page, list):
                     pub_details += f", {paper.page[0]}"
                 else:
                     pub_details += f", {paper.page}"
 
-            formatted_entry = TEMPLATE[format].format(
+            match (format, arxiv):
+                case ("latex", _):
+                    template = TEMPLATE["latex"]
+                case ("typst", ""):
+                    template = TEMPLATE["typst"]
+                case ("typst", e) if e != "":
+                    template = TEMPLATE["typst_arxiv"]
+                case _:
+                    raise ValueError(f"Unknown format/arxiv combination: {format}/{arxiv}")
+
+            formatted_entry = template.format(
                 prefix=prefix,
                 title=title,
                 authors=formatted_authors,
@@ -284,14 +296,12 @@ def process_papers(
     first_author = sum(
         1
         for p in papers
-        if any(normalize_author(_) == main_author for _ in p.author[:2])
-        and replace(p.pub, format) is not _SKIP
+        if any(normalize_author(_) == main_author for _ in p.author[:2]) and replace(p.pub, format) is not _SKIP
     )
     contributor = sum(
         1
         for p in papers
-        if (not any(normalize_author(_) == main_author for _ in p.author[:2]))
-        and replace(p.pub, format) is not _SKIP
+        if (not any(normalize_author(_) == main_author for _ in p.author[:2])) and replace(p.pub, format) is not _SKIP
     )
 
     # Join formatted lists
@@ -348,19 +358,15 @@ def format_results(stats: StatsResult, author: str, format: str = "html") -> str
         with open(root / "utils" / "publications.template.html", "r") as f:
             template = env.from_string(f.read())
 
-        return template.render(
-            stats=stats, last_check=last_check, author=author_str, highlight_author="Cadiou"
-        )
-    
+        return template.render(stats=stats, last_check=last_check, author=author_str, highlight_author="Cadiou")
+
     elif format in ["latex", "typst"]:
         # LaTeX/Typst format using direct string formatting
-        last_check = date.today().strftime(
-            r"\nth{%d} %B %Y" if format == "latex" else "#nth({%d}) %B %Y"
-        )
+        last_check = date.today().strftime(r"\nth{%d} %B %Y" if format == "latex" else "#nth({%d}) %B %Y")
 
         author_str = urllib.parse.quote(author)
         AA_str = r"A\&A" if format == "latex" else "A&A"
-        
+
         if stats.nsubmitted == 0:
             published = rf"all published in MNRAS and {AA_str}"
         else:
@@ -371,7 +377,7 @@ def format_results(stats: StatsResult, author: str, format: str = "html") -> str
             "&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&"
             f"q=((author%3A%22{author_str}%22))&sort=date%20desc%2C%20bibcode%20desc"
         )
-        
+
         if format == "latex":
             url_txt = r"{\setul{1pt}{.4pt}\setulcolor{red}\ul{source: NASA/ADS}}."
             sub_sec = lambda name: rf"\quad\textbf{{\large {name}}}\quad\hrulefill\n\n"
@@ -389,11 +395,7 @@ def format_results(stats: StatsResult, author: str, format: str = "html") -> str
                 """
             )
             + "\n\n"
-            + (
-                (sub_sec("Submitted articles") + stats.submitted_list)
-                if len(stats.submitted_list) > 0
-                else ""
-            )
+            + ((sub_sec("Submitted articles") + stats.submitted_list) if len(stats.submitted_list) > 0 else "")
             + "\n\n"
             + sub_sec("Published articles")
             + stats.paper_list
@@ -407,8 +409,19 @@ def format_results(stats: StatsResult, author: str, format: str = "html") -> str
                 + indent(content, "    ")
                 + "\n]\n"
             )
+            content += """
+#if sys.inputs.keys().len() == 0 [
+  #import "cv.typ": *
+  #show highlight: it => text(fill: pblue)[*#it.body*]
+  #set par(justify: true)
+  #show link: underline
+
+  = Publication list
+  #publist(author => text(fill: pblue)[*#author*])
+]
+"""
         return content
-    
+
     else:
         raise ValueError(f"Unknown format: {format}")
 
@@ -417,25 +430,37 @@ def cleanup_content(content: str) -> str:
     """Remove trailing whitespaces and ensure file ends with a newline"""
     # Split into lines, strip trailing whitespace from each line, rejoin
     lines = [line.rstrip() for line in content.splitlines()]
-    
+
     # Join lines back together and ensure single trailing newline
-    cleaned_content = '\n'.join(lines)
-    
+    cleaned_content = "\n".join(lines)
+
     # Ensure file ends with exactly one newline
-    if not cleaned_content.endswith('\n'):
-        cleaned_content += '\n'
-    
+    if not cleaned_content.endswith("\n"):
+        cleaned_content += "\n"
+
     return cleaned_content
+
+
 def main(argv: Optional[Sequence]) -> int:
     parser = argparse.ArgumentParser(description="Get the list of papers from ADS")
     parser.add_argument(
-        "-o", "--output", type=str, default=None,
-        help="Output file path (default: publications/index.html for html, papers.tex for latex, papers.typ for typst)"
+        "-o",
+        "--output",
+        type=str,
+        default=None,
+        help="Output file path (default: publications/index.html for html, papers.tex for latex, papers.typ for typst)",
     )
     parser.add_argument("-a", "--author", type=str, default="Cadiou, C")
     parser.add_argument(
-        "-f", "--format", type=str, choices=["html", "latex", "typst"], default="html",
-        help="Output format (html, latex, or typst)"
+        "-y", "--year-range", type=int, nargs=2, default=None, help="Year range for publications (e.g., 2020 2024)"
+    )
+    parser.add_argument(
+        "-f",
+        "--format",
+        type=str,
+        choices=["html", "latex", "typst"],
+        default="html",
+        help="Output format (html, latex, or typst)",
     )
 
     args = parser.parse_args(argv)
@@ -449,7 +474,7 @@ def main(argv: Optional[Sequence]) -> int:
         elif args.format == "typst":
             args.output = "papers.typ"
 
-    papers = get_papers(args.author)
+    papers = get_papers(args.author, args.year_range)
     main_author = normalize_author(args.author)
     res = process_papers(papers, main_author, format=args.format)
     content = format_results(res, args.author, format=args.format)
