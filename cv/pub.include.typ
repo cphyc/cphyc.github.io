@@ -2,17 +2,15 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
-    I also contributed to #highlight[28] other articles.
+    I also contributed to #highlight[27] other articles.
     My papers have been cited #highlight[1045] times (_h_-index of 17 as
-    of #nth({10}) March 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    of #nth({11}) March 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
     +  "*MEGATRON: The environments of Population III stars at Cosmic Dawn and their connection to present day galaxies*",
       Storck, Katz, Devriendt, Slyz, #hl_author[Cadiou], Choustikov, Rey, Saxena, Agertz~\& Kimm, _#link("https://arxiv.org/abs/2510.06853")[submitted, arXiv:2510.06853]_, (2025).
-    +  "*MEGATRON: Disentangling Physical Processes and Observational Bias in the Multi-Phase ISM of High-Redshift Galaxies*",
-      Choustikov, Katz, Cameron, Saxena, Devriendt, Slyz, Rey, #hl_author[Cadiou], Blaizot, Kimm, Laseter, Matsumoto~\& Rosdahl, _#link("https://arxiv.org/abs/2510.06347")[submitted, arXiv:2510.06347]_, (2025).
     +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
       #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _#link("https://arxiv.org/abs/2510.05667")[submitted, arXiv:2510.05667]_, (2025).
     +  "*MEGATRON: how the first stars create an iron metallicity plateau in the smallest dwarf galaxies*",
@@ -24,12 +22,12 @@
 
     +  "*On the Origin of Intracluster Light Based on the High-resolution Simulation, NEWCLUSTER*",
       Jeon, Contini, Han, Rhee, Martin, Kim, Lee, Kimm, Pichon, Byun, Dubois, #hl_author[Cadiou], Jang~\& Yi, _#link("https://arxiv.org/abs/2512.06098")[The Astrophysical Journal, 998, 30]_, (2026).
+    +  "*MEGATRON: Disentangling Physical Processes and Observational Bias in the Multi-Phase ISM of High-Redshift Galaxies*",
+      Choustikov, Katz, Cameron, Saxena, Devriendt, Slyz, Rey, #hl_author[Cadiou], Blaizot, Kimm, Laseter, Matsumoto~\& Rosdahl, _#link("https://arxiv.org/abs/2510.06347")[The Open Journal of Astrophysics, 9, 58199]_, (2026).
     +  "*Introducing NewCluster: First half of the history of a high-resolution cluster simulation*",
       Han, Yi, Dubois, Rhee, Jeon, Jang, Byun, #hl_author[Cadiou], Kim, Kimm~\& Pichon, _#link("https://arxiv.org/abs/2507.06301")[Astronomy and Astrophysics, 705, A169]_, (2026).
     +  "*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*",
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _#link("https://arxiv.org/abs/2411.07282")[The Open Journal of Astrophysics, 9, 56097]_, (2026).
-    +  "*MEGATRON: Disentangling Physical Processes and Observational Bias in the Multi-Phase ISM of High-Redshift Galaxies*",
-      Choustikov, Katz, Cameron, Saxena, Devriendt, Slyz, Rey, #hl_author[Cadiou], Blaizot, Kimm, Laseter, Matsumoto~\& Rosdahl, _The Open Journal of Astrophysics, 9, 58199_, (2026).
     +  "*EDGE: the emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*",
       Rey, Taylor, Gray, Kim, Andersson, Pontzen, Agertz, Read, #hl_author[Cadiou], Yates, Orkney, Scholte, Saintonge, Breneman, McQuinn, Muni~\& Das, _#link("https://arxiv.org/abs/2503.03813")[Monthly Notices of the Royal Astronomical Society, 541, 1195]_, (2025).
     +  "*RAMSES-yOMP: Performance Optimizations for the Astrophysical Hydrodynamic Simulation Code RAMSES*",
