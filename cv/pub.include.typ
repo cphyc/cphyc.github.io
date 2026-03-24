@@ -2,15 +2,13 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
-    I also contributed to #highlight[28] other articles.
-    My papers have been cited #highlight[1052] times (_h_-index of 17 as
-    of #nth({23}) March 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[27] other articles.
+    My papers have been cited #highlight[1050] times (_h_-index of 17 as
+    of #nth({24}) March 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
-    +  "*MEGATRON: The environments of Population III stars at Cosmic Dawn and their connection to present day galaxies*",
-      Storck, Katz, Devriendt, Slyz, #hl_author[Cadiou], Choustikov, Rey, Saxena, Agertz~\& Kimm, _#link("https://arxiv.org/abs/2510.06853")[submitted, arXiv:2510.06853]_, (2025).
     +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
       #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _#link("https://arxiv.org/abs/2510.05667")[submitted, arXiv:2510.05667]_, (2025).
     +  "*MEGATRON: how the first stars create an iron metallicity plateau in the smallest dwarf galaxies*",
