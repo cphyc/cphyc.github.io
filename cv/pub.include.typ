@@ -2,9 +2,9 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
-    I also contributed to #highlight[27] other articles.
-    My papers have been cited #highlight[1076] times (_h_-index of 17 as
-    of #nth({12}) April 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[26] other articles.
+    My papers have been cited #highlight[1071] times (_h_-index of 17 as
+    of #nth({14}) April 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -20,8 +20,6 @@
 
     +  "*On the Origin of Intracluster Light Based on the High-resolution Simulation, NEWCLUSTER*",
       Jeon, Contini, Han, Rhee, Martin, Kim, Lee, Kimm, Pichon, Byun, Dubois, #hl_author[Cadiou], Jang~\& Yi, _#link("https://arxiv.org/abs/2512.06098")[The Astrophysical Journal, 998, 30]_, (2026).
-    +  "*MEGATRON: The environments of Population III stars at Cosmic Dawn and their connection to present day galaxies*",
-      Storck, Katz, Devriendt, Slyz, #hl_author[Cadiou], Choustikov, Rey, Saxena, Agertz~\& Kimm, _#link("https://arxiv.org/abs/2510.06853")[Monthly Notices of the Royal Astronomical Society]_, (2026).
     +  "*MEGATRON: Disentangling Physical Processes and Observational Bias in the Multi-Phase ISM of High-Redshift Galaxies*",
       Choustikov, Katz, Cameron, Saxena, Devriendt, Slyz, Rey, #hl_author[Cadiou], Blaizot, Kimm, Laseter, Matsumoto~\& Rosdahl, _#link("https://arxiv.org/abs/2510.06347")[The Open Journal of Astrophysics, 9, 58199]_, (2026).
     +  "*Introducing NewCluster: First half of the history of a high-resolution cluster simulation*",
