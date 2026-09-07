@@ -4,7 +4,7 @@
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
     I also contributed to #highlight[28] other articles.
     My papers have been cited #highlight[1188] times (_h_-index of 18 as
-    of #nth({06}) September 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    of #nth({07}) September 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -13,7 +13,7 @@
       Jhee, Song, Laigle, Pichon, #hl_author[Cadiou]~\& Choi, _#link("https://arxiv.org/abs/2606.19443")[submitted, arXiv:2606.19443]_, (2026).
     +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
       #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _#link("https://arxiv.org/abs/2510.05667")[submitted, arXiv:2510.05667]_, (2025).
-    +  "*MEGATRON: how the first stars create an iron metallicity plateau in the smallest dwarf galaxies*",
+    +  "*MEGATRON: how the first stars can create an iron metallicity plateau in the smallest dwarf galaxies*",
       Rey, Katz, #hl_author[Cadiou], Sanati, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Ji, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Revaz, Rodriguez Montero, Rosdahl, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _#link("https://arxiv.org/abs/2510.05232")[submitted, arXiv:2510.05232]_, (2025).
     +  "*MEGATRON: Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation Hydrodynamics Simulations*",
       Katz, Rey, #hl_author[Cadiou], Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Rodríguez Montero, Rosdahl, Sanati, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _#link("https://arxiv.org/abs/2510.05201")[submitted, arXiv:2510.05201]_, (2025).
