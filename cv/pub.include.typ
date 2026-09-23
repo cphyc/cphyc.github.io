@@ -2,9 +2,9 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
-    I also contributed to #highlight[28] other articles.
-    My papers have been cited #highlight[1190] times (_h_-index of 18 as
-    of #nth({22}) September 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[29] other articles.
+    My papers have been cited #highlight[1188] times (_h_-index of 18 as
+    of #nth({23}) September 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -30,6 +30,8 @@
       Han, Yi, Dubois, Rhee, Jeon, Jang, Byun, #hl_author[Cadiou], Kim, Kimm~\& Pichon, _#link("https://arxiv.org/abs/2507.06301")[Astronomy and Astrophysics, 705, A169]_, (2026).
     +  "*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*",
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _#link("https://arxiv.org/abs/2411.07282")[The Open Journal of Astrophysics, 9, 56097]_, (2026).
+    +  "*pynbody/pynbody: Version 2.4.1*",
+      Pontzen, Roškar, #hl_author[Cadiou], Stinson, Keller, Mastropietro, Lu, Duffy, Tremmel, Sarrato Alós, Bovy, mkrets, Rey, Davies, Quinn, Franck, Sarmento, Woods, Alonso, nroth0815, Coles, mtryan83, Ji, Claude, Applebaum, Zana, Callingham~\& Biernacki, _-999_, (2026).
     +  "*EDGE: the emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*",
       Rey, Taylor, Gray, Kim, Andersson, Pontzen, Agertz, Read, #hl_author[Cadiou], Yates, Orkney, Scholte, Saintonge, Breneman, McQuinn, Muni~\& Das, _#link("https://arxiv.org/abs/2503.03813")[Monthly Notices of the Royal Astronomical Society, 541, 1195]_, (2025).
     +  "*RAMSES-yOMP: Performance Optimizations for the Astrophysical Hydrodynamic Simulation Code RAMSES*",
