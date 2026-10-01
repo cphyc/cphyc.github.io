@@ -2,13 +2,17 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[21] articles as lead or co-lead author (#highlight[20] already published in MNRAS and A&A).
-    I also contributed to #highlight[29] other articles.
-    My papers have been cited #highlight[1192] times (_h_-index of 18 as
-    of #nth({30}) September 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[31] other articles.
+    My papers have been cited #highlight[1193] times (_h_-index of 18 as
+    of #nth({01}) October 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
+    +  "*MEGATRON: Dwarf Galaxy Quenching in the Epoch of Reionization*",
+      Attard, Iliev, Rey, Katz, #hl_author[Cadiou]~\& Choustikov, _#link("https://arxiv.org/abs/2609.37188")[submitted, arXiv:2609.37188]_, (2026).
+    +  "*MEGATRON: The Physical Origins of Steep UV Slopes at High Redshift*",
+      Katz, Choustikov, Saxena, #hl_author[Cadiou], Rey, Blaizot, Cameron, Cullen, Kimm~\& Matsumoto, _#link("https://arxiv.org/abs/2609.36124")[submitted, arXiv:2609.36124]_, (2026).
     +  "*The impact of evolving cosmic filaments on mass and spin evolution of dark matter halos*",
       Jhee, Song, Laigle, Pichon, #hl_author[Cadiou]~\& Choi, _#link("https://arxiv.org/abs/2606.19443")[submitted, arXiv:2606.19443]_, (2026).
     +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
