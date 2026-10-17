@@ -2,13 +2,15 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[22] articles as lead or co-lead author (#highlight[21] already published in MNRAS and A&A).
-    I also contributed to #highlight[35] other articles.
-    My papers have been cited #highlight[1216] times (_h_-index of 19 as
-    of #nth({16}) October 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[36] other articles.
+    My papers have been cited #highlight[1223] times (_h_-index of 19 as
+    of #nth({17}) October 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
+    +  "*Resolving the Assembly of Disk Galaxies from the Epoch of Reionisation to Cosmic Noon*",
+      Kaasinen, Kohandel, Rizzo, Bacchini, Zanella, Rowland, Querejeta, Stacey, Lapi, Maio, Butler, Jones, Wisnioski, Spilker, Vallini, Pallottini, Alcade Pampliega, Molina, Mancera Piña, #hl_author[Cadiou], Despali, Salvestrini, Lelli, Liu, Bradač, Caputi, Ginolfi, Messa, Lamperti, Neeleman, Vidal-García, Fensch, Fujimoto, Hodge, Popping, Thater, da Cunha, Boogaard, Aravena, Tsukui, Fisher, McGregor, Cox, Freundlich, Pandey-Pommier, Pereira-Santaella, Amvrosiadis~\& Kansal, _#link("https://arxiv.org/abs/2610.21441")[submitted, arXiv:2610.21441]_, (2026).
     +  "*Early onset of the hot circumgalactic medium around Milky Way galaxies*",
       Rufo-Pastor, Agertz, Roca-Fábrega, Rey, Bland-Hawthorn, Read, Tepper-García, #hl_author[Cadiou]~\& Storck, _#link("https://arxiv.org/abs/2610.08931")[submitted, arXiv:2610.08931]_, (2026).
     +  "*MEGATRON: Dwarf Galaxy Quenching in the Epoch of Reionization*",
