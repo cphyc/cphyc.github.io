@@ -2,9 +2,9 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[22] articles as lead or co-lead author (#highlight[21] already published in MNRAS and A&A).
-    I also contributed to #highlight[36] other articles.
-    My papers have been cited #highlight[1225] times (_h_-index of 19 as
-    of #nth({18}) October 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[37] other articles.
+    My papers have been cited #highlight[1230] times (_h_-index of 20 as
+    of #nth({19}) October 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -38,6 +38,8 @@
       Han, Yi, Dubois, Rhee, Jeon, Jang, Byun, #hl_author[Cadiou], Kim, Kimm~\& Pichon, _#link("https://arxiv.org/abs/2507.06301")[Astronomy and Astrophysics, 705, A169]_, (2026).
     +  "*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*",
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _#link("https://arxiv.org/abs/2411.07282")[The Open Journal of Astrophysics, 9, 56097]_, (2026).
+    +  "*Early onset of the hot circumgalactic medium around Milky Way galaxies*",
+      Rufo-Pastor, Agertz, Roca-Fábrega, Rey, Bland-Hawthorn, Read, Tepper-García, #hl_author[Cadiou]~\& Storck, _Monthly Notices of the Royal Astronomical Society_, (2026).
     +  "*MEGATRON: Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation Hydrodynamics Simulations*",
       Katz, Rey, #hl_author[Cadiou], Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Rodríguez Montero, Rosdahl, Sanati, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _The Open Journal of Astrophysics, 9, 69643_, (2026).
     +  "*MEGATRON: The Physical Origins of Steep UV Slopes at high redshift*",
