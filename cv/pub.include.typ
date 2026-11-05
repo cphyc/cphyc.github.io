@@ -1,53 +1,45 @@
 #import "@preview/nth:0.2.0": nth
 #let publist = (hl_author) => [
 
-    I have submitted #highlight[22] articles as lead or co-lead author (#highlight[21] already published in MNRAS and A&A).
-    I also contributed to #highlight[37] other articles.
-    My papers have been cited #highlight[1322] times (_h_-index of 21 as
-    of #nth({04}) November 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I have submitted #highlight[21] articles as lead or co-lead author (all published in MNRAS and A&A).
+    I also contributed to #highlight[34] other articles.
+    My papers have been cited #highlight[1277] times (_h_-index of 20 as
+    of #nth({05}) November 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
 
+    +  "*Revisiting the Missing Baryon Problem: Baryon Redistribution Across Halo Evolution*",
+      Seo, Jeon, Contini, Dubois, #hl_author[Cadiou], Han, Jang, Peirani, Pichon, Rhee~\& Yi, _#link("https://arxiv.org/abs/2611.03814")[submitted, arXiv:2611.03814]_, (2026).
     +  "*Resolving the Assembly of Disk Galaxies from the Epoch of Reionisation to Cosmic Noon*",
       Kaasinen, Kohandel, Rizzo, Bacchini, Zanella, Rowland, Querejeta, Stacey, Lapi, Maio, Butler, Jones, Wisnioski, Spilker, Vallini, Pallottini, Alcade Pampliega, Molina, Mancera Piña, #hl_author[Cadiou], Despali, Salvestrini, Lelli, Liu, Bradač, Caputi, Ginolfi, Messa, Lamperti, Neeleman, Vidal-García, Fensch, Fujimoto, Hodge, Popping, Thater, da Cunha, Boogaard, Aravena, Tsukui, Fisher, McGregor, Cox, Freundlich, Pandey-Pommier, Pereira-Santaella, Amvrosiadis~\& Kansal, _#link("https://arxiv.org/abs/2610.21441")[submitted, arXiv:2610.21441]_, (2026).
-    +  "*Early onset of the hot circumgalactic medium around Milky Way galaxies*",
-      Rufo-Pastor, Agertz, Roca-Fábrega, Rey, Bland-Hawthorn, Read, Tepper-García, #hl_author[Cadiou]~\& Storck, _#link("https://arxiv.org/abs/2610.08931")[submitted, arXiv:2610.08931]_, (2026).
     +  "*MEGATRON: Dwarf Galaxy Quenching in the Epoch of Reionization*",
       Attard, Iliev, Rey, Katz, #hl_author[Cadiou]~\& Choustikov, _#link("https://arxiv.org/abs/2609.37188")[submitted, arXiv:2609.37188]_, (2026).
-    +  "*MEGATRON: The Physical Origins of Steep UV Slopes at High Redshift*",
-      Katz, Choustikov, Saxena, #hl_author[Cadiou], Rey, Blaizot, Cameron, Cullen, Kimm~\& Matsumoto, _#link("https://arxiv.org/abs/2609.36124")[submitted, arXiv:2609.36124]_, (2026).
     +  "*The impact of evolving cosmic filaments on mass and spin evolution of dark matter halos*",
       Jhee, Song, Laigle, Pichon, #hl_author[Cadiou]~\& Choi, _#link("https://arxiv.org/abs/2606.19443")[submitted, arXiv:2606.19443]_, (2026).
-    +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
-      #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _#link("https://arxiv.org/abs/2510.05667")[submitted, arXiv:2510.05667]_, (2025).
-    +  "*MEGATRON: how the first stars can create an iron metallicity plateau in the smallest dwarf galaxies*",
-      Rey, Katz, #hl_author[Cadiou], Sanati, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Ji, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Revaz, Rodriguez Montero, Rosdahl, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _#link("https://arxiv.org/abs/2510.05232")[submitted, arXiv:2510.05232]_, (2025).
-    +  "*MEGATRON: Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation Hydrodynamics Simulations*",
-      Katz, Rey, #hl_author[Cadiou], Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Rodríguez Montero, Rosdahl, Sanati, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _#link("https://arxiv.org/abs/2510.05201")[submitted, arXiv:2510.05201]_, (2025).
 
     == Published articles
 
+    +  "*Early onset of the hot circumgalactic medium around Milky Way galaxies*",
+      Rufo-Pastor, Agertz, Roca-Fábrega, Rey, Bland-Hawthorn, Read, Tepper-García, #hl_author[Cadiou]~\& Storck, _#link("https://arxiv.org/abs/2610.08931")[Monthly Notices of the Royal Astronomical Society, 553, stag1931]_, (2026).
+    +  "*MEGATRON: The Physical Origins of Steep UV Slopes at high redshift*",
+      Katz, Choustikov, Saxena, #hl_author[Cadiou], Rey, Blaizot, Cameron, Cullen, Kimm~\& Matsumoto, _#link("https://arxiv.org/abs/2609.36124")[The Open Journal of Astrophysics, 9, 69642]_, (2026).
     +  "*On the Origin of Intracluster Light Based on the High-resolution Simulation, NEWCLUSTER*",
       Jeon, Contini, Han, Rhee, Martin, Kim, Lee, Kimm, Pichon, Byun, Dubois, #hl_author[Cadiou], Jang~\& Yi, _#link("https://arxiv.org/abs/2512.06098")[The Astrophysical Journal, 998, 30]_, (2026).
     +  "*MEGATRON: the environments of Population III stars at Cosmic Dawn and their connection to present-day galaxies*",
       Storck, Katz, Devriendt, Slyz, #hl_author[Cadiou], Choustikov, Rey, Saxena, Agertz~\& Kimm, _#link("https://arxiv.org/abs/2510.06853")[Monthly Notices of the Royal Astronomical Society, 548, stag529]_, (2026).
     +  "*MEGATRON: Disentangling Physical Processes and Observational Bias in the Multi-Phase ISM of High-Redshift Galaxies*",
       Choustikov, Katz, Cameron, Saxena, Devriendt, Slyz, Rey, #hl_author[Cadiou], Blaizot, Kimm, Laseter, Matsumoto~\& Rosdahl, _#link("https://arxiv.org/abs/2510.06347")[The Open Journal of Astrophysics, 9, 58199]_, (2026).
+    +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
+      #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Álvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _#link("https://arxiv.org/abs/2510.05667")[The Open Journal of Astrophysics, 9, 69640]_, (2026).
+    +  "*MEGATRON: how the first stars can create an iron metallicity plateau in the smallest dwarf galaxies*",
+      Rey, Katz, #hl_author[Cadiou], Sanati, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Ji, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Revaz, Montero, Rosdahl, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _#link("https://arxiv.org/abs/2510.05232")[The Open Journal of Astrophysics, 9, 69605]_, (2026).
+    +  "*MEGATRON: Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation Hydrodynamics Simulations*",
+      Katz, Rey, #hl_author[Cadiou], Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Rodríguez Montero, Rosdahl, Sanati, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _#link("https://arxiv.org/abs/2510.05201")[The Open Journal of Astrophysics, 9, 69643]_, (2026).
     +  "*Introducing NewCluster: First half of the history of a high-resolution cluster simulation*",
       Han, Yi, Dubois, Rhee, Jeon, Jang, Byun, #hl_author[Cadiou], Kim, Kimm~\& Pichon, _#link("https://arxiv.org/abs/2507.06301")[Astronomy and Astrophysics, 705, A169]_, (2026).
     +  "*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*",
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _#link("https://arxiv.org/abs/2411.07282")[The Open Journal of Astrophysics, 9, 56097]_, (2026).
-    +  "*Early onset of the hot circumgalactic medium around Milky Way galaxies*",
-      Rufo-Pastor, Agertz, Roca-Fábrega, Rey, Bland-Hawthorn, Read, Tepper-García, #hl_author[Cadiou]~\& Storck, _Monthly Notices of the Royal Astronomical Society, 553, stag1931_, (2026).
-    +  "*MEGATRON: Reproducing the Diversity of High-Redshift Galaxy Spectra with Cosmological Radiation Hydrodynamics Simulations*",
-      Katz, Rey, #hl_author[Cadiou], Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Rodríguez Montero, Rosdahl, Sanati, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _The Open Journal of Astrophysics, 9, 69643_, (2026).
-    +  "*MEGATRON: The Physical Origins of Steep UV Slopes at high redshift*",
-      Katz, Choustikov, Saxena, #hl_author[Cadiou], Rey, Blaizot, Cameron, Cullen, Kimm~\& Matsumoto, _The Open Journal of Astrophysics, 9, 69642_, (2026).
-    +  "*MEGATRON: the impact of non-equilibrium effects and local radiation fields on the circumgalactic medium at cosmic noon*",
-      #hl_author[Cadiou], Katz, Rey, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Jones, Kimm, Laseter, Álvarez, Matsumoto, Nyhagen, Pearce, Rodríguez Montero, Rosdahl, Rufo Pastor, Sanati, Saxena, Slyz, Stiskalek, Storck~\& Yee, _The Open Journal of Astrophysics, 9, 69640_, (2026).
-    +  "*MEGATRON: how the first stars can create an iron metallicity plateau in the smallest dwarf galaxies*",
-      Rey, Katz, #hl_author[Cadiou], Sanati, Agertz, Blaizot, Cameron, Choustikov, Devriendt, Hauk, Ji, Jones, Kimm, Laseter, Martin-Alvarez, Matsumoto, Pearce, Revaz, Montero, Rosdahl, Saxena, Slyz, Stiskalek, Storck, Veenema~\& Yee, _The Open Journal of Astrophysics, 9, 69605_, (2026).
     +  "*pynbody/pynbody: Version 2.4.1*",
       Pontzen, Roškar, #hl_author[Cadiou], Stinson, Keller, Mastropietro, Lu, Duffy, Tremmel, Sarrato Alós, Bovy, mkrets, Rey, Davies, Quinn, Franck, Sarmento, Woods, Alonso, nroth0815, Coles, mtryan83, Ji, Claude, Applebaum, Zana, Callingham~\& Biernacki, _-999_, (2026).
     +  "*EDGE: the emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*",
