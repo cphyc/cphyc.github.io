@@ -2,9 +2,9 @@
 #let publist = (hl_author) => [
 
     I have submitted #highlight[21] articles as lead or co-lead author (all published in MNRAS and A&A).
-    I also contributed to #highlight[36] other articles.
-    My papers have been cited #highlight[1339] times (_h_-index of 22 as
-    of #nth({22}) November 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
+    I also contributed to #highlight[37] other articles.
+    My papers have been cited #highlight[1340] times (_h_-index of 22 as
+    of #nth({23}) November 2026), #link("https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p_=0&q=((author%3A%22Cadiou%2C%20C%22))&sort=date%20desc%2C%20bibcode%20desc")[source: NASA/ADS.]
 
 
     == Submitted articles
@@ -44,6 +44,8 @@
       Han, Yi, Dubois, Rhee, Jeon, Jang, Byun, #hl_author[Cadiou], Kim, Kimm~\& Pichon, _#link("https://arxiv.org/abs/2507.06301")[Astronomy and Astrophysics, 705, A169]_, (2026).
     +  "*The Impact of Star Formation and Feedback Recipes on the Stellar Mass and Interstellar Medium of High-Redshift Galaxies*",
       Katz, Rey, #hl_author[Cadiou], Kimm~\& Agertz, _#link("https://arxiv.org/abs/2411.07282")[The Open Journal of Astrophysics, 9, 56097]_, (2026).
+    +  "*The history of our Milky Way disc using the Gaia mission and post-processed simulations*",
+      Barbillon, Recio-Blanco, Tepper-García, #hl_author[Cadiou], Peirani~\& Bland-Hawthorn, _SF2A-2026: Proceedings of the Annual meeting of the French Society of Astronomy and Astrophysics. Eds.: A. Siebert, 281_, (2026).
     +  "*pynbody/pynbody: Version 2.4.1*",
       Pontzen, Roškar, #hl_author[Cadiou], Stinson, Keller, Mastropietro, Lu, Duffy, Tremmel, Sarrato Alós, Bovy, mkrets, Rey, Davies, Quinn, Franck, Sarmento, Woods, Alonso, nroth0815, Coles, mtryan83, Ji, Claude, Applebaum, Zana, Callingham~\& Biernacki, _-999_, (2026).
     +  "*EDGE: the emergence of dwarf galaxy scaling relations from cosmological radiation-hydrodynamics simulations*",
